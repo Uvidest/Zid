@@ -1,0 +1,12 @@
+.btn {
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: right;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px 30px;
+    background: var(--color-black);
+    border-radius: 50px;
+}
