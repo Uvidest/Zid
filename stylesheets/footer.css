@@ -1,0 +1,144 @@
+.footer {
+    padding: 60px 50px;
+    background: var(--color-black);
+}
+
+.footer__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer__socials,
+.footer__contacts,
+.footer__additional-info,
+.footer__about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+
+.socials__logo {
+    font-family: Rubik;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 59.25px;
+    text-align: right;
+    color: var(--color-white);
+}
+
+.socials__text-under-logo,
+.about-us__description {
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: right;
+    color: var(--color-white);
+}
+
+.socials__link-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.contacts__title,
+.additional-info__title,
+.about-us__title {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.44px;
+    text-align: right;
+    color: var(--color-white);
+}
+
+.contacts__address {
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.96px;
+    text-align: right;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+.contacts__phone,
+.contacts__mail,
+.additional-info__shop,
+.additional-info__about-us,
+.additional-info__connection,
+.additional-info__blog {
+    font-family: Rubik;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.96px;
+    text-align: right;
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+
+    .footer__socials {
+        order: 2;
+        grid-column: span 2;
+    }
+
+    .socials__logo {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 35.55px;
+    }
+
+    .socials__text-under-logo {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+
+    .contacts__title,
+    .additional-info__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.33px;
+    }
+
+    .contacts__address,
+    .contacts__phone,
+    .contacts__mail,
+    .additional-info__shop,
+    .additional-info__about-us,
+    .additional-info__connection,
+    .additional-info__blog {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.59px;
+    }
+
+    .footer__about-us {
+        order: -1;
+        grid-column: span 2;
+    }
+
+    .about-us__title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 21.33px;
+    }
+
+    .about-us__description {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+}
