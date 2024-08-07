@@ -13,12 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			prevEl: ".collections-grid__navigation-wrapper .swiper-button-prev",
 		},
 		breakpoints: {
-			768: {
-				slidesPerView: "auto",
-				spaceBetween: 15,
-			},
 			1: {
 				slidesPerView: 1,
+				spaceBetween: 15,
+			},
+			768: {
+				slidesPerView: "auto",
+				spaceBetween: 20,
 			},
 		},
 	});
