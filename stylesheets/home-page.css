@@ -11,7 +11,8 @@
     position: relative;
 }
 
-.hero-banner__slider .swiper-pagination {
+.hero-banner__slider .swiper-pagination,
+.products-grid__slider .swiper-pagination {
     display: none;
 }
 
