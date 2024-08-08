@@ -1,4 +1,4 @@
-.btn {
+.button {
     font-family: Rubik;
     font-size: 16px;
     font-weight: 500;
@@ -9,4 +9,25 @@
     padding: 10px 30px;
     background: var(--color-black);
     border-radius: 50px;
+    border: none;
+    outline: none;
+    transition: all .2s ease;
+    border: 1px solid var(--color-black);
+}
+
+.button:hover {
+    box-shadow: 0px 4px 4px 0px #00000026;
+}
+
+.button:active {
+    background: #E5E5E5;
+    color: var(--color-black);
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+    }
 }

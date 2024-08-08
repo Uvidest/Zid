@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zid & Angel</title>
+    <link rel="stylesheet" href="stylesheets/home-page.css">
+    <link rel="stylesheet" href="stylesheets/swiper-bundle.min.css">
+    <link rel="stylesheet" href="stylesheets/button.css">
+    <link rel="stylesheet" href="stylesheets/base.css">
+    <link rel="stylesheet" href="stylesheets/header.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+</head>
+
+<body>
+    <div class="announcement-bar default-paddings">
+        <div class="announcement-bar__wrapper page-width">
+            <a class="announcement-bar__buy-button" href="#">تسوق الآن</a>
+            <div class="announcement-bar__timer">
+                <span class="timer__days">7</span>
+                <span>:</span>
+                <span class="timer__hours">13</span>
+                <span>:</span>
+                <span class="timer__minutes">46</span>
+                <span>:</span>
+                <span class="timer__seconds">23</span>
+            </div>
+            <p class="announcement-bar__announcement">الشحن المجاني</p>
+        </div>
+    </div>
+    <header class="header default-paddings">
+        <div class="header__wrapper page-width">
+            <div class="header__icons-nav">
+                <a class="icons-nav__cart" href="#">
+                    <img src="assets/icons/cart-icon.svg" alt="cart icon">
+                </a>
+                <div class="icons-nav__search">
+                    <a href="#">
+                        <img src="assets/icons/search-icon.svg" alt="search-icon">
+                    </a>
+                    <input type="text" placeholder="يبحث">
+                </div>
+            </div>
+            <div class="header__menu-nav">
+                <a href="#">مدونة</a>
+                <a href="#">اتصال</a>
+                <a href="#">معلومات عنا</a>
+                <a href="#">متجر</a>
+            </div>
+            <a href="/" class="header__logo">
+                <img src="assets/icons/logo-icon.svg" alt="logo">
+            </a>
+            <div class="header__menu-button">
+                <button type="button">
+                    <img src="assets/icons/menu-button.svg" alt="menu button">
+                </button>
+            </div>
+        </div>
+        <div class="header__mobile-menu">
+            <div class="mobile-menu__background"></div>
+            <div class="mobile-menu__wrapper">
+                <div class="mobile-menu__title">
+                    <img class="title__cross" src="assets/icons/cross-icon.svg" alt="cross">
+                    <p>قائمة طعام</p>
+                </div>
+                <div class="mobile-menu__menu-nav">
+                    <div class="menu-nav__search">
+                        <div class="search__wrapper">
+                            <img src="assets/icons/search-icon.svg" alt="search">
+                            <input type="text" placeholder="يبحث">
+                        </div>
+                    </div>
+                    <a href="#">متجر</a>
+                    <a href="#">معلومات عنا</a>
+                    <a href="#">اتصال</a>
+                    <a href="#">مدونة</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero-banner">
+            <div class="hero-banner__wrapper page-width">
+                <div class="swiper hero-banner__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide hero-banner__banner-slide banner-slide-1">
+                            <h2>متجر أثاث وديكور على الإنترنت</h2>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                الشكل
+                                الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                            <a class="button" href="#">تسوق الآن</a>
+                        </div>
+                        <div class="swiper-slide hero-banner__banner-slide banner-slide-2">
+                            <h2>متجر أثاث وديكور على الإنترنت</h2>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
+                                الشكل
+                                الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                            <a class="button" href="#">تسوق الآن</a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="hero-banner__navigation-wrapper">
+                    <button class="swiper-button-prev">
+                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 17.3333C10 16.45 9.08375 15.1309 8.15625 14.0238C6.96375 12.5952 5.53875 11.3488 3.905 10.3976C2.68 9.68452 1.195 8.99999 0 8.99999M0 8.99999C1.195 8.99999 2.68125 8.31547 3.905 7.60238C5.53875 6.65 6.96375 5.40357 8.15625 3.97738C9.08375 2.86904 10 1.54761 10 0.666662M0 8.99999L30 8.99999"
+                                stroke="#1E1E1E" />
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next">
+                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 17.3333C20 16.45 20.9162 15.1309 21.8437 14.0238C23.0362 12.5952 24.4612 11.3488 26.095 10.3976C27.32 9.68452 28.805 8.99999 30 8.99999M30 8.99999C28.805 8.99999 27.3187 8.31547 26.095 7.60238C24.4612 6.65 23.0362 5.40357 21.8437 3.97738C20.9162 2.86904 20 1.54761 20 0.666662M30 8.99999L0 8.99999"
+                                stroke="#1E1E1E" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="collections-grid">
+            <div class="collections-grid__wrapper page-width">
+                <div class="swiper collections-grid__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide collections-grid__collection-slide collection-slide-1">
+                            <h3>أدوات المائدة</h3>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ .</p>
+                            <a class="button" href="collection-page.html">عرض المزيد</a>
+                        </div>
+                        <div class="swiper-slide collections-grid__collection-slide collection-slide-2">
+                            <h3>المزهريات</h3>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ .</p>
+                            <a class="button" href="collection-page.html">عرض المزيد</a>
+                        </div>
+                        <div class="swiper-slide collections-grid__collection-slide collection-slide-3">
+                            <h3>أثاث</h3>
+                            <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ .</p>
+                            <a class="button" href="collection-page.html">عرض المزيد</a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+                <div class="collections-grid__navigation-wrapper">
+                    <button class="swiper-button-prev">
+                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 17.3333C10 16.45 9.08375 15.1309 8.15625 14.0238C6.96375 12.5952 5.53875 11.3488 3.905 10.3976C2.68 9.68452 1.195 8.99999 0 8.99999M0 8.99999C1.195 8.99999 2.68125 8.31547 3.905 7.60238C5.53875 6.65 6.96375 5.40357 8.15625 3.97738C9.08375 2.86904 10 1.54761 10 0.666662M0 8.99999L30 8.99999"
+                                stroke="#1E1E1E" />
+                        </svg>
+                    </button>
+                    <button class="swiper-button-next">
+                        <svg width="30" height="18" viewBox="0 0 30 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20 17.3333C20 16.45 20.9162 15.1309 21.8437 14.0238C23.0362 12.5952 24.4612 11.3488 26.095 10.3976C27.32 9.68452 28.805 8.99999 30 8.99999M30 8.99999C28.805 8.99999 27.3187 8.31547 26.095 7.60238C24.4612 6.65 23.0362 5.40357 21.8437 3.97738C20.9162 2.86904 20 1.54761 20 0.666662M30 8.99999L0 8.99999"
+                                stroke="#1E1E1E" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="products-grid">
+            <div class="products-grid__wrapper page-width">
+                <h2 class="products-grid__title">الوافدون الجدد</h2>
+                <div class="products-grid__slider-wrapper">
+                    <div class="swiper products-grid__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide products-grid__product-slide">
+                                <a class="product-slide__wrapper" href="#">
+                                    <div class="product-slide__product-image">
+                                        <img src="assets/images/product-2.png" alt="product">
+                                        <div class="product-image__product-icons">
+                                            <span class="product-icons__like-button">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.823 11.0729C10.0375 12.6366 8.21082 13.6458 7.99998 13.759C7.78914 13.6458 5.96248 12.6366 4.17698 11.0729C2.31749 9.44447 0.666829 7.35696 0.66665 5.15869C0.667868 4.15336 1.06777 3.18955 1.77865 2.47867C2.48954 1.76778 3.45335 1.36788 4.45868 1.36666C5.74589 1.36676 6.84309 1.91734 7.52018 2.81913L7.99998 3.45816L8.47979 2.81913C9.15688 1.91734 10.2541 1.36676 11.5413 1.36666C12.5466 1.36788 13.5104 1.76778 14.2213 2.47867C14.9321 3.18946 15.332 4.15313 15.3333 5.15833C15.3333 7.35673 13.6826 9.44438 11.823 11.0729Z"
+                                                        stroke="#1E1E1E" stroke-width="1.2" />
+                                                </svg>
+                                            </span>
+                                            <span class="product-icons__add-to-cart-button">
+                                                <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M4.161 4.85145H2.945C2.53992 4.85147 2.14988 4.99995 1.85343 5.26701C1.55698 5.53406 1.37614 5.89985 1.34732 6.29072L0.562897 16.9158C0.547249 17.1281 0.576951 17.3411 0.650153 17.5418C0.723355 17.7424 0.838488 17.9263 0.988376 18.082C1.13827 18.2377 1.3197 18.3619 1.52137 18.4468C1.72304 18.5317 1.94063 18.5756 2.16058 18.5756H14.8395C15.0594 18.5754 15.277 18.5315 15.4786 18.4466C15.6802 18.3616 15.8615 18.2374 16.0114 18.0817C16.1613 17.9261 16.2764 17.7422 16.3497 17.5416C16.4229 17.3411 16.4527 17.128 16.4372 16.9158L15.6528 6.29072C15.624 5.89985 15.4431 5.53406 15.1467 5.26701C14.8502 4.99995 14.4602 4.85147 14.0551 4.85145H12.8478V4.6301C12.8478 3.51465 12.3897 2.4449 11.5744 1.65616C10.759 0.867424 9.65314 0.424316 8.50005 0.424316C6.18659 0.424316 4.04841 2.20668 4.1523 4.6301L4.161 4.85145ZM12.8478 6.17959V9.49995C12.8478 9.67607 12.7755 9.84498 12.6467 9.96951C12.518 10.0941 12.3434 10.164 12.1613 10.164C11.9792 10.164 11.8046 10.0941 11.6759 9.96951C11.5471 9.84498 11.4748 9.67607 11.4748 9.49995V6.17959H5.52528V9.49995C5.52528 9.67607 5.45295 9.84498 5.32421 9.96951C5.19547 10.0941 5.02086 10.164 4.83879 10.164C4.65672 10.164 4.48211 10.0941 4.35337 9.96951C4.22463 9.84498 4.1523 9.67607 4.1523 9.49995C4.1523 9.49995 4.2118 7.94824 4.19212 6.17959H2.945C2.88722 6.17967 2.83161 6.20089 2.78933 6.239C2.74706 6.2771 2.72125 6.32926 2.71709 6.38501L1.93221 17.0101C1.92994 17.0405 1.93417 17.071 1.94462 17.0996C1.95507 17.1283 1.97153 17.1546 1.99296 17.1769C2.01439 17.1992 2.04033 17.2169 2.06917 17.2291C2.09801 17.2412 2.12913 17.2475 2.16058 17.2474H14.8395C14.8709 17.2473 14.902 17.241 14.9308 17.2288C14.9595 17.2166 14.9854 17.1989 15.0068 17.1766C15.0282 17.1544 15.0447 17.1281 15.0552 17.0995C15.0657 17.0709 15.07 17.0405 15.0679 17.0101L14.283 6.38501C14.2788 6.32926 14.253 6.2771 14.2108 6.239C14.1685 6.20089 14.1129 6.17967 14.0551 6.17959H12.8478ZM11.4748 4.85145V4.6301C11.4748 3.8669 11.1614 3.13496 10.6035 2.5953C10.0457 2.05564 9.28901 1.75246 8.50005 1.75246C7.71109 1.75246 6.95444 2.05564 6.39657 2.5953C5.83869 3.13496 5.52528 3.8669 5.52528 4.6301V4.85145H11.4748Z"
+                                                        fill="#1E1E1E" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-slide__product-info">
+                                        <p class="product-info__price">$256.00</p>
+                                        <p class="product-info__name">اسم المنتج</p>
+                                        <div class="product-info__rating">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide products-grid__product-slide">
+                                <a class="product-slide__wrapper" href="#">
+                                    <div class="product-slide__product-image">
+                                        <img src="assets/images/product-4.png" alt="product">
+                                        <div class="product-image__product-icons">
+                                            <span class="product-icons__like-button">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.823 11.0729C10.0375 12.6366 8.21082 13.6458 7.99998 13.759C7.78914 13.6458 5.96248 12.6366 4.17698 11.0729C2.31749 9.44447 0.666829 7.35696 0.66665 5.15869C0.667868 4.15336 1.06777 3.18955 1.77865 2.47867C2.48954 1.76778 3.45335 1.36788 4.45868 1.36666C5.74589 1.36676 6.84309 1.91734 7.52018 2.81913L7.99998 3.45816L8.47979 2.81913C9.15688 1.91734 10.2541 1.36676 11.5413 1.36666C12.5466 1.36788 13.5104 1.76778 14.2213 2.47867C14.9321 3.18946 15.332 4.15313 15.3333 5.15833C15.3333 7.35673 13.6826 9.44438 11.823 11.0729Z"
+                                                        stroke="#1E1E1E" stroke-width="1.2" />
+                                                </svg>
+                                            </span>
+                                            <span class="product-icons__add-to-cart-button">
+                                                <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M4.161 4.85145H2.945C2.53992 4.85147 2.14988 4.99995 1.85343 5.26701C1.55698 5.53406 1.37614 5.89985 1.34732 6.29072L0.562897 16.9158C0.547249 17.1281 0.576951 17.3411 0.650153 17.5418C0.723355 17.7424 0.838488 17.9263 0.988376 18.082C1.13827 18.2377 1.3197 18.3619 1.52137 18.4468C1.72304 18.5317 1.94063 18.5756 2.16058 18.5756H14.8395C15.0594 18.5754 15.277 18.5315 15.4786 18.4466C15.6802 18.3616 15.8615 18.2374 16.0114 18.0817C16.1613 17.9261 16.2764 17.7422 16.3497 17.5416C16.4229 17.3411 16.4527 17.128 16.4372 16.9158L15.6528 6.29072C15.624 5.89985 15.4431 5.53406 15.1467 5.26701C14.8502 4.99995 14.4602 4.85147 14.0551 4.85145H12.8478V4.6301C12.8478 3.51465 12.3897 2.4449 11.5744 1.65616C10.759 0.867424 9.65314 0.424316 8.50005 0.424316C6.18659 0.424316 4.04841 2.20668 4.1523 4.6301L4.161 4.85145ZM12.8478 6.17959V9.49995C12.8478 9.67607 12.7755 9.84498 12.6467 9.96951C12.518 10.0941 12.3434 10.164 12.1613 10.164C11.9792 10.164 11.8046 10.0941 11.6759 9.96951C11.5471 9.84498 11.4748 9.67607 11.4748 9.49995V6.17959H5.52528V9.49995C5.52528 9.67607 5.45295 9.84498 5.32421 9.96951C5.19547 10.0941 5.02086 10.164 4.83879 10.164C4.65672 10.164 4.48211 10.0941 4.35337 9.96951C4.22463 9.84498 4.1523 9.67607 4.1523 9.49995C4.1523 9.49995 4.2118 7.94824 4.19212 6.17959H2.945C2.88722 6.17967 2.83161 6.20089 2.78933 6.239C2.74706 6.2771 2.72125 6.32926 2.71709 6.38501L1.93221 17.0101C1.92994 17.0405 1.93417 17.071 1.94462 17.0996C1.95507 17.1283 1.97153 17.1546 1.99296 17.1769C2.01439 17.1992 2.04033 17.2169 2.06917 17.2291C2.09801 17.2412 2.12913 17.2475 2.16058 17.2474H14.8395C14.8709 17.2473 14.902 17.241 14.9308 17.2288C14.9595 17.2166 14.9854 17.1989 15.0068 17.1766C15.0282 17.1544 15.0447 17.1281 15.0552 17.0995C15.0657 17.0709 15.07 17.0405 15.0679 17.0101L14.283 6.38501C14.2788 6.32926 14.253 6.2771 14.2108 6.239C14.1685 6.20089 14.1129 6.17967 14.0551 6.17959H12.8478ZM11.4748 4.85145V4.6301C11.4748 3.8669 11.1614 3.13496 10.6035 2.5953C10.0457 2.05564 9.28901 1.75246 8.50005 1.75246C7.71109 1.75246 6.95444 2.05564 6.39657 2.5953C5.83869 3.13496 5.52528 3.8669 5.52528 4.6301V4.85145H11.4748Z"
+                                                        fill="#1E1E1E" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-slide__product-info">
+                                        <p class="product-info__price">$256.00</p>
+                                        <p class="product-info__name">اسم المنتج</p>
+                                        <div class="product-info__rating">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide products-grid__product-slide">
+                                <a class="product-slide__wrapper" href="#">
+                                    <div class="product-slide__product-image">
+                                        <img src="assets/images/product-1.png" alt="product">
+                                        <div class="product-image__product-icons">
+                                            <span class="product-icons__like-button">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.823 11.0729C10.0375 12.6366 8.21082 13.6458 7.99998 13.759C7.78914 13.6458 5.96248 12.6366 4.17698 11.0729C2.31749 9.44447 0.666829 7.35696 0.66665 5.15869C0.667868 4.15336 1.06777 3.18955 1.77865 2.47867C2.48954 1.76778 3.45335 1.36788 4.45868 1.36666C5.74589 1.36676 6.84309 1.91734 7.52018 2.81913L7.99998 3.45816L8.47979 2.81913C9.15688 1.91734 10.2541 1.36676 11.5413 1.36666C12.5466 1.36788 13.5104 1.76778 14.2213 2.47867C14.9321 3.18946 15.332 4.15313 15.3333 5.15833C15.3333 7.35673 13.6826 9.44438 11.823 11.0729Z"
+                                                        stroke="#1E1E1E" stroke-width="1.2" />
+                                                </svg>
+                                            </span>
+                                            <span class="product-icons__add-to-cart-button">
+                                                <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M4.161 4.85145H2.945C2.53992 4.85147 2.14988 4.99995 1.85343 5.26701C1.55698 5.53406 1.37614 5.89985 1.34732 6.29072L0.562897 16.9158C0.547249 17.1281 0.576951 17.3411 0.650153 17.5418C0.723355 17.7424 0.838488 17.9263 0.988376 18.082C1.13827 18.2377 1.3197 18.3619 1.52137 18.4468C1.72304 18.5317 1.94063 18.5756 2.16058 18.5756H14.8395C15.0594 18.5754 15.277 18.5315 15.4786 18.4466C15.6802 18.3616 15.8615 18.2374 16.0114 18.0817C16.1613 17.9261 16.2764 17.7422 16.3497 17.5416C16.4229 17.3411 16.4527 17.128 16.4372 16.9158L15.6528 6.29072C15.624 5.89985 15.4431 5.53406 15.1467 5.26701C14.8502 4.99995 14.4602 4.85147 14.0551 4.85145H12.8478V4.6301C12.8478 3.51465 12.3897 2.4449 11.5744 1.65616C10.759 0.867424 9.65314 0.424316 8.50005 0.424316C6.18659 0.424316 4.04841 2.20668 4.1523 4.6301L4.161 4.85145ZM12.8478 6.17959V9.49995C12.8478 9.67607 12.7755 9.84498 12.6467 9.96951C12.518 10.0941 12.3434 10.164 12.1613 10.164C11.9792 10.164 11.8046 10.0941 11.6759 9.96951C11.5471 9.84498 11.4748 9.67607 11.4748 9.49995V6.17959H5.52528V9.49995C5.52528 9.67607 5.45295 9.84498 5.32421 9.96951C5.19547 10.0941 5.02086 10.164 4.83879 10.164C4.65672 10.164 4.48211 10.0941 4.35337 9.96951C4.22463 9.84498 4.1523 9.67607 4.1523 9.49995C4.1523 9.49995 4.2118 7.94824 4.19212 6.17959H2.945C2.88722 6.17967 2.83161 6.20089 2.78933 6.239C2.74706 6.2771 2.72125 6.32926 2.71709 6.38501L1.93221 17.0101C1.92994 17.0405 1.93417 17.071 1.94462 17.0996C1.95507 17.1283 1.97153 17.1546 1.99296 17.1769C2.01439 17.1992 2.04033 17.2169 2.06917 17.2291C2.09801 17.2412 2.12913 17.2475 2.16058 17.2474H14.8395C14.8709 17.2473 14.902 17.241 14.9308 17.2288C14.9595 17.2166 14.9854 17.1989 15.0068 17.1766C15.0282 17.1544 15.0447 17.1281 15.0552 17.0995C15.0657 17.0709 15.07 17.0405 15.0679 17.0101L14.283 6.38501C14.2788 6.32926 14.253 6.2771 14.2108 6.239C14.1685 6.20089 14.1129 6.17967 14.0551 6.17959H12.8478ZM11.4748 4.85145V4.6301C11.4748 3.8669 11.1614 3.13496 10.6035 2.5953C10.0457 2.05564 9.28901 1.75246 8.50005 1.75246C7.71109 1.75246 6.95444 2.05564 6.39657 2.5953C5.83869 3.13496 5.52528 3.8669 5.52528 4.6301V4.85145H11.4748Z"
+                                                        fill="#1E1E1E" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-slide__product-info">
+                                        <p class="product-info__price">$256.00</p>
+                                        <p class="product-info__name">اسم المنتج</p>
+                                        <div class="product-info__rating">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide products-grid__product-slide">
+                                <a class="product-slide__wrapper" href="#">
+                                    <div class="product-slide__product-image">
+                                        <img src="assets/images/product-2.png" alt="product">
+                                        <div class="product-image__product-icons">
+                                            <span class="product-icons__like-button">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.823 11.0729C10.0375 12.6366 8.21082 13.6458 7.99998 13.759C7.78914 13.6458 5.96248 12.6366 4.17698 11.0729C2.31749 9.44447 0.666829 7.35696 0.66665 5.15869C0.667868 4.15336 1.06777 3.18955 1.77865 2.47867C2.48954 1.76778 3.45335 1.36788 4.45868 1.36666C5.74589 1.36676 6.84309 1.91734 7.52018 2.81913L7.99998 3.45816L8.47979 2.81913C9.15688 1.91734 10.2541 1.36676 11.5413 1.36666C12.5466 1.36788 13.5104 1.76778 14.2213 2.47867C14.9321 3.18946 15.332 4.15313 15.3333 5.15833C15.3333 7.35673 13.6826 9.44438 11.823 11.0729Z"
+                                                        stroke="#1E1E1E" stroke-width="1.2" />
+                                                </svg>
+                                            </span>
+                                            <span class="product-icons__add-to-cart-button">
+                                                <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M4.161 4.85145H2.945C2.53992 4.85147 2.14988 4.99995 1.85343 5.26701C1.55698 5.53406 1.37614 5.89985 1.34732 6.29072L0.562897 16.9158C0.547249 17.1281 0.576951 17.3411 0.650153 17.5418C0.723355 17.7424 0.838488 17.9263 0.988376 18.082C1.13827 18.2377 1.3197 18.3619 1.52137 18.4468C1.72304 18.5317 1.94063 18.5756 2.16058 18.5756H14.8395C15.0594 18.5754 15.277 18.5315 15.4786 18.4466C15.6802 18.3616 15.8615 18.2374 16.0114 18.0817C16.1613 17.9261 16.2764 17.7422 16.3497 17.5416C16.4229 17.3411 16.4527 17.128 16.4372 16.9158L15.6528 6.29072C15.624 5.89985 15.4431 5.53406 15.1467 5.26701C14.8502 4.99995 14.4602 4.85147 14.0551 4.85145H12.8478V4.6301C12.8478 3.51465 12.3897 2.4449 11.5744 1.65616C10.759 0.867424 9.65314 0.424316 8.50005 0.424316C6.18659 0.424316 4.04841 2.20668 4.1523 4.6301L4.161 4.85145ZM12.8478 6.17959V9.49995C12.8478 9.67607 12.7755 9.84498 12.6467 9.96951C12.518 10.0941 12.3434 10.164 12.1613 10.164C11.9792 10.164 11.8046 10.0941 11.6759 9.96951C11.5471 9.84498 11.4748 9.67607 11.4748 9.49995V6.17959H5.52528V9.49995C5.52528 9.67607 5.45295 9.84498 5.32421 9.96951C5.19547 10.0941 5.02086 10.164 4.83879 10.164C4.65672 10.164 4.48211 10.0941 4.35337 9.96951C4.22463 9.84498 4.1523 9.67607 4.1523 9.49995C4.1523 9.49995 4.2118 7.94824 4.19212 6.17959H2.945C2.88722 6.17967 2.83161 6.20089 2.78933 6.239C2.74706 6.2771 2.72125 6.32926 2.71709 6.38501L1.93221 17.0101C1.92994 17.0405 1.93417 17.071 1.94462 17.0996C1.95507 17.1283 1.97153 17.1546 1.99296 17.1769C2.01439 17.1992 2.04033 17.2169 2.06917 17.2291C2.09801 17.2412 2.12913 17.2475 2.16058 17.2474H14.8395C14.8709 17.2473 14.902 17.241 14.9308 17.2288C14.9595 17.2166 14.9854 17.1989 15.0068 17.1766C15.0282 17.1544 15.0447 17.1281 15.0552 17.0995C15.0657 17.0709 15.07 17.0405 15.0679 17.0101L14.283 6.38501C14.2788 6.32926 14.253 6.2771 14.2108 6.239C14.1685 6.20089 14.1129 6.17967 14.0551 6.17959H12.8478ZM11.4748 4.85145V4.6301C11.4748 3.8669 11.1614 3.13496 10.6035 2.5953C10.0457 2.05564 9.28901 1.75246 8.50005 1.75246C7.71109 1.75246 6.95444 2.05564 6.39657 2.5953C5.83869 3.13496 5.52528 3.8669 5.52528 4.6301V4.85145H11.4748Z"
+                                                        fill="#1E1E1E" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-slide__product-info">
+                                        <p class="product-info__price">$256.00</p>
+                                        <p class="product-info__name">اسم المنتج</p>
+                                        <div class="product-info__rating">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide products-grid__product-slide">
+                                <a class="product-slide__wrapper" href="#">
+                                    <div class="product-slide__product-image">
+                                        <img src="assets/images/product-3.png" alt="product">
+                                        <div class="product-image__product-icons">
+                                            <span class="product-icons__like-button">
+                                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M11.823 11.0729C10.0375 12.6366 8.21082 13.6458 7.99998 13.759C7.78914 13.6458 5.96248 12.6366 4.17698 11.0729C2.31749 9.44447 0.666829 7.35696 0.66665 5.15869C0.667868 4.15336 1.06777 3.18955 1.77865 2.47867C2.48954 1.76778 3.45335 1.36788 4.45868 1.36666C5.74589 1.36676 6.84309 1.91734 7.52018 2.81913L7.99998 3.45816L8.47979 2.81913C9.15688 1.91734 10.2541 1.36676 11.5413 1.36666C12.5466 1.36788 13.5104 1.76778 14.2213 2.47867C14.9321 3.18946 15.332 4.15313 15.3333 5.15833C15.3333 7.35673 13.6826 9.44438 11.823 11.0729Z"
+                                                        stroke="#1E1E1E" stroke-width="1.2" />
+                                                </svg>
+                                            </span>
+                                            <span class="product-icons__add-to-cart-button">
+                                                <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M4.161 4.85145H2.945C2.53992 4.85147 2.14988 4.99995 1.85343 5.26701C1.55698 5.53406 1.37614 5.89985 1.34732 6.29072L0.562897 16.9158C0.547249 17.1281 0.576951 17.3411 0.650153 17.5418C0.723355 17.7424 0.838488 17.9263 0.988376 18.082C1.13827 18.2377 1.3197 18.3619 1.52137 18.4468C1.72304 18.5317 1.94063 18.5756 2.16058 18.5756H14.8395C15.0594 18.5754 15.277 18.5315 15.4786 18.4466C15.6802 18.3616 15.8615 18.2374 16.0114 18.0817C16.1613 17.9261 16.2764 17.7422 16.3497 17.5416C16.4229 17.3411 16.4527 17.128 16.4372 16.9158L15.6528 6.29072C15.624 5.89985 15.4431 5.53406 15.1467 5.26701C14.8502 4.99995 14.4602 4.85147 14.0551 4.85145H12.8478V4.6301C12.8478 3.51465 12.3897 2.4449 11.5744 1.65616C10.759 0.867424 9.65314 0.424316 8.50005 0.424316C6.18659 0.424316 4.04841 2.20668 4.1523 4.6301L4.161 4.85145ZM12.8478 6.17959V9.49995C12.8478 9.67607 12.7755 9.84498 12.6467 9.96951C12.518 10.0941 12.3434 10.164 12.1613 10.164C11.9792 10.164 11.8046 10.0941 11.6759 9.96951C11.5471 9.84498 11.4748 9.67607 11.4748 9.49995V6.17959H5.52528V9.49995C5.52528 9.67607 5.45295 9.84498 5.32421 9.96951C5.19547 10.0941 5.02086 10.164 4.83879 10.164C4.65672 10.164 4.48211 10.0941 4.35337 9.96951C4.22463 9.84498 4.1523 9.67607 4.1523 9.49995C4.1523 9.49995 4.2118 7.94824 4.19212 6.17959H2.945C2.88722 6.17967 2.83161 6.20089 2.78933 6.239C2.74706 6.2771 2.72125 6.32926 2.71709 6.38501L1.93221 17.0101C1.92994 17.0405 1.93417 17.071 1.94462 17.0996C1.95507 17.1283 1.97153 17.1546 1.99296 17.1769C2.01439 17.1992 2.04033 17.2169 2.06917 17.2291C2.09801 17.2412 2.12913 17.2475 2.16058 17.2474H14.8395C14.8709 17.2473 14.902 17.241 14.9308 17.2288C14.9595 17.2166 14.9854 17.1989 15.0068 17.1766C15.0282 17.1544 15.0447 17.1281 15.0552 17.0995C15.0657 17.0709 15.07 17.0405 15.0679 17.0101L14.283 6.38501C14.2788 6.32926 14.253 6.2771 14.2108 6.239C14.1685 6.20089 14.1129 6.17967 14.0551 6.17959H12.8478ZM11.4748 4.85145V4.6301C11.4748 3.8669 11.1614 3.13496 10.6035 2.5953C10.0457 2.05564 9.28901 1.75246 8.50005 1.75246C7.71109 1.75246 6.95444 2.05564 6.39657 2.5953C5.83869 3.13496 5.52528 3.8669 5.52528 4.6301V4.85145H11.4748Z"
+                                                        fill="#1E1E1E" />
+                                                </svg>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="product-slide__product-info">
+                                        <p class="product-info__price">$256.00</p>
+                                        <p class="product-info__name">اسم المنتج</p>
+                                        <div class="product-info__rating">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                            <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="products-grid__navigation-wrapper">
+                        <button class="swiper-button-prev">
+                            <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 17.3333C10 16.45 9.08375 15.1309 8.15625 14.0238C6.96375 12.5952 5.53875 11.3488 3.905 10.3976C2.68 9.68452 1.195 8.99999 0 8.99999M0 8.99999C1.195 8.99999 2.68125 8.31547 3.905 7.60238C5.53875 6.65 6.96375 5.40357 8.15625 3.97738C9.08375 2.86904 10 1.54761 10 0.666662M0 8.99999L30 8.99999"
+                                    stroke="#1E1E1E" />
+                            </svg>
+                        </button>
+                        <button class="swiper-button-next">
+                            <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 17.3333C20 16.45 20.9162 15.1309 21.8437 14.0238C23.0362 12.5952 24.4612 11.3488 26.095 10.3976C27.32 9.68452 28.805 8.99999 30 8.99999M30 8.99999C28.805 8.99999 27.3187 8.31547 26.095 7.60238C24.4612 6.65 23.0362 5.40357 21.8437 3.97738C20.9162 2.86904 20 1.54761 20 0.666662M30 8.99999L0 8.99999"
+                                    stroke="#1E1E1E" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products-presentation">
+            <div class="products-presentation__wrapper page-width">
+                <h2 class="products-presentation__title">فئات</h2>
+                <p class="products-presentation__text-under-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                    لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                <div class="products-presentation__presentation-body">
+                    <div class="swiper presentation-body__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide presentation-body__presentation-slide">
+                                <div class="presentation-slide__image">
+                                    <img src="assets/images/product-presentation-1.png" alt="product presentation">
+                                </div>
+                                <div class="presentation-slide__product-info">
+                                    <p class="product-info__price">$256.00</p>
+                                    <p class="product-info__name">اسم المنتج</p>
+                                    <div class="product-info__rating">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide presentation-body__presentation-slide">
+                                <div class="presentation-slide__image">
+                                    <img src="assets/images/product-presentation-1.png" alt="product presentation">
+                                </div>
+                                <div class="presentation-slide__product-info">
+                                    <p class="product-info__price">$256.00</p>
+                                    <p class="product-info__name">اسم المنتج</p>
+                                    <div class="product-info__rating">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide presentation-body__presentation-slide">
+                                <div class="presentation-slide__image">
+                                    <img src="assets/images/product-presentation-1.png" alt="product presentation">
+                                </div>
+                                <div class="presentation-slide__product-info">
+                                    <p class="product-info__price">$256.00</p>
+                                    <p class="product-info__name">اسم المنتج</p>
+                                    <div class="product-info__rating">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide presentation-body__presentation-slide">
+                                <div class="presentation-slide__image">
+                                    <img src="assets/images/product-presentation-1.png" alt="product presentation">
+                                </div>
+                                <div class="presentation-slide__product-info">
+                                    <p class="product-info__price">$256.00</p>
+                                    <p class="product-info__name">اسم المنتج</p>
+                                    <div class="product-info__rating">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide presentation-body__presentation-slide">
+                                <div class="presentation-slide__image">
+                                    <img src="assets/images/product-presentation-1.png" alt="product presentation">
+                                </div>
+                                <div class="presentation-slide__product-info">
+                                    <p class="product-info__price">$256.00</p>
+                                    <p class="product-info__name">اسم المنتج</p>
+                                    <div class="product-info__rating">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide presentation-body__presentation-slide">
+                                <div class="presentation-slide__image">
+                                    <img src="assets/images/product-presentation-1.png" alt="product presentation">
+                                </div>
+                                <div class="presentation-slide__product-info">
+                                    <p class="product-info__price">$256.00</p>
+                                    <p class="product-info__name">اسم المنتج</p>
+                                    <div class="product-info__rating">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                        <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="products-presentation__layout">
+                        <img src="assets/images/presentation-layout.png" alt="">
+                        <span class="layout__dot" data-dot-index="0"></span>
+                        <span class="layout__dot" data-dot-index="1"></span>
+                        <span class="layout__dot" data-dot-index="2"></span>
+                        <span class="layout__dot" data-dot-index="3"></span>
+                        <span class="layout__dot" data-dot-index="4"></span>
+                        <span class="layout__dot" data-dot-index="5"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="categories__wrapper page-width">
+                <h2 class="categories__title">فئات</h2>
+                <div class="categories__slider-wrapper">
+                    <div class="swiper categories__slider">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide categories__category-slide category-slide-1">
+                                <p>إكسسوارات</p>
+                            </a>
+                            <a href="#" class="swiper-slide categories__category-slide category-slide-2">
+                                <p>إكسسوارات</p>
+                            </a>
+                            <a href="#" class="swiper-slide categories__category-slide category-slide-3">
+                                <p>إكسسوارات</p>
+                            </a>
+                            <a href="#" class="swiper-slide categories__category-slide category-slide-4">
+                                <p>إكسسوارات</p>
+                            </a>
+                            <a href="#" class="swiper-slide categories__category-slide category-slide-5">
+                                <p>إكسسوارات</p>
+                            </a>
+                            <a href="#" class="swiper-slide categories__category-slide category-slide-6">
+                                <p>إكسسوارات</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="categories__navigation-wrapper">
+                        <button class="swiper-button-prev">
+                            <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 17.3333C10 16.45 9.08375 15.1309 8.15625 14.0238C6.96375 12.5952 5.53875 11.3488 3.905 10.3976C2.68 9.68452 1.195 8.99999 0 8.99999M0 8.99999C1.195 8.99999 2.68125 8.31547 3.905 7.60238C5.53875 6.65 6.96375 5.40357 8.15625 3.97738C9.08375 2.86904 10 1.54761 10 0.666662M0 8.99999L30 8.99999"
+                                    stroke="#1E1E1E" />
+                            </svg>
+                        </button>
+                        <button class="swiper-button-next">
+                            <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20 17.3333C20 16.45 20.9162 15.1309 21.8437 14.0238C23.0362 12.5952 24.4612 11.3488 26.095 10.3976C27.32 9.68452 28.805 8.99999 30 8.99999M30 8.99999C28.805 8.99999 27.3187 8.31547 26.095 7.60238C24.4612 6.65 23.0362 5.40357 21.8437 3.97738C20.9162 2.86904 20 1.54761 20 0.666662M30 8.99999L0 8.99999"
+                                    stroke="#1E1E1E" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info-banner">
+            <div class="info-banner__wrapper page-width">
+                <div class="info-banner__image">
+                    <img src="assets/images/info-banner.png" alt="info banner">
+                </div>
+                <div class="info-banner__text-content">
+                    <h2>
+                        متجر أثاث وديكور على الإنترنت
+                    </h2>
+                    <p>
+                        هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                        الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.
+                    </p>
+                    <a class="button" href="#">تسوق الآن</a>
+                </div>
+            </div>
+        </section>
+        <section class="before-after">
+            <div class="before-after__wrapper page-width">
+                <div class="before-after__before">
+                    <span>قبل</span>
+                </div>
+                <div class="before-after__after">
+                    <span>بعد</span>
+                </div>
+                <button class="before-after__button" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </section>
+        <section class="large-products-grid">
+            <div class="large-products-grid__wrapper page-width">
+                <h2 class="large-products-grid__title">منتجات مميزة</h2>
+                <p class="large-products-grid__text-under-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                    لصفحة ما سيلهي القارئ عن التركيز على الشكل
+                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                <div class="large-products-grid__hero-grid">
+                    <div class="hero-grid__product">
+                        <div class="product__image">
+                            <img src="assets/images/grid-product-1.png" alt="grid product">
+                        </div>
+                        <div class="product__product-info">
+                            <p class="product-info__price">$256.00</p>
+                            <p class="product-info__name">اسم المنتج</p>
+                            <div class="product-info__rating">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-grid__product">
+                        <div class="product__image">
+                            <img src="assets/images/grid-product-2.png" alt="grid product">
+                        </div>
+                        <div class="product__product-info">
+                            <p class="product-info__price">$256.00</p>
+                            <p class="product-info__name">اسم المنتج</p>
+                            <div class="product-info__rating">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-grid__product product--large">
+                        <div class="product__image">
+                            <img src="assets/images/grid-product-3.png" alt="grid product">
+                        </div>
+                        <div class="product__product-info">
+                            <p class="product-info__price">$256.00</p>
+                            <p class="product-info__name">اسم المنتج</p>
+                            <div class="product-info__rating">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-grid__product">
+                        <div class="product__image">
+                            <img src="assets/images/grid-product-4.png" alt="grid product">
+                        </div>
+                        <div class="product__product-info">
+                            <p class="product-info__price">$256.00</p>
+                            <p class="product-info__name">اسم المنتج</p>
+                            <div class="product-info__rating">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-grid__product">
+                        <div class="product__image">
+                            <img src="assets/images/grid-product-5.png" alt="grid product">
+                        </div>
+                        <div class="product__product-info">
+                            <p class="product-info__price">$256.00</p>
+                            <p class="product-info__name">اسم المنتج</p>
+                            <div class="product-info__rating">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                <img src="assets/icons/star-filled-icon.svg" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero-video">
+            <div class="hero-video__wrapper">
+                <video src="assets/videos/You-found-the-wrong-full.mp4" poster="assets/images/video-poster.jpg" autoplay
+                    muted loop></video>
+            </div>
+        </section>
+        <section class="logo-grid">
+            <div class="logo-grid__wrapper page-width">
+                <div>logo</div>
+                <div>LOGO</div>
+                <div>logo</div>
+                <div>LOGO</div>
+                <div>logo</div>
+                <div>LOGO</div>
+                <div>logo</div>
+                <div>LOGO</div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <div class="contact-form__wrapper page-width">
+                <h2 class="contact-form__title">النشرة الإخبارية</h2>
+                <p class="contact-form__text-under-title">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما
+                    سيلهي القارئ عن التركيز على الشكل
+                    الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+                <form class="contact-form__form" action="/">
+                    <input type="email" placeholder="بريد إلكتروني">
+                    <button type="submit" class="button">اشترك</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper page-width">
+            <div class="footer__socials">
+                <p class="socials__logo">LOGO</p>
+                <p class="socials__text-under-logo">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                    القارئ عن.</p>
+                <div class="socials__link-grid">
+                    <a href="#"><img src="assets/icons/instagram-icon.svg" alt="instagram"></a>
+                    <a href="#"><img src="assets/icons/youtube-icon.svg" alt="youtube"></a>
+                    <a href="#"><img src="assets/icons/facebook-icon.svg" alt="facebook"></a>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p class="contacts__title">معلومات الاتصال</p>
+                <a class="contacts__address" href="#">اسم الشارع، المدينة، إنجلترا</a>
+                <a class="contacts__phone" href="tel:1232160550">(123) 216-0550</a>
+                <a class="contacts__mail" href="mailto:mail@example.com">mail@example.com</a>
+            </div>
+            <div class="footer__additional-info">
+                <p class="additional-info__title">معلومة</p>
+                <a class="additional-info__shop" href="#">متجر</a>
+                <a class="additional-info__about-us" href="#">معلومات عنا</a>
+                <a class="additional-info__connection" href="#">اتصال</a>
+                <a class="additional-info__blog" href="#">مدونة</a>
+            </div>
+            <div class="footer__about-us">
+                <p class="about-us__title">معلومات عنا</p>
+                <p class="about-us__description">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي
+                    القارئ عن التركيز على الشكل
+                    الخارجي
+                    للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/swiper-bundle.min.js" defer></script>
+    <script src="scripts/hero-banner-slider.js" defer></script>
+    <script src="scripts/collections-grid-slider.js" defer></script>
+    <script src="scripts/products-grid-slider.js" defer></script>
+    <script src="scripts/products-presentation.js" defer></script>
+    <script src="scripts/categories-slider.js" defer></script>
+    <script src="scripts/before-after.js" defer></script>
+    <script src="scripts/mobile-menu.js" defer></script>
+</body>
+
+</html>
