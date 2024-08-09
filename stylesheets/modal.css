@@ -3,7 +3,6 @@
     top: 0;
     left: 0;
     z-index: 100;
-    background: #1E1E1E80;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,6 +10,23 @@
     height: 100vh;
     padding: 0;
     padding: 20px;
+    transition: all .5s ease;
+}
+
+.quick-view-modal:not(.modal--opened) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.quick-view-modal:not(.modal--opened) .quick-view-modal__wrapper {
+    transform: translateY(100%);
+}
+
+.quick-view-modal__background {
+    background: var(--color-black);
+    opacity: .5;
+    position: absolute;
+    inset: 0;
 }
 
 .quick-view-modal__wrapper {
@@ -21,6 +37,7 @@
     background: var(--color-white);
     border-radius: 10px;
     overflow: hidden;
+    transition: all .5s ease;
 }
 
 .quick-view-modal__hero-product-wrapper {
@@ -370,6 +387,8 @@
         max-height: calc(100vh - 80px);
         overflow-y: scroll;
         padding: 54px 15px 20px 15px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     .quick-view-modal__hero-product-wrapper {
@@ -400,5 +419,66 @@
 
     .quick-view-modal .menu-to-buy__like-button {
         display: none;
+    }
+
+    .main-info__price {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .main-info__name {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .main-info__compare-at-price {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .main-info__wrapper {
+        margin-top: 15px;
+    }
+
+    .product-info__description {
+        margin: 15px;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .menu-to-buy__like-button {
+        display: none;
+    }
+
+    .menu-to-buy__variants {
+        margin-bottom: 30px;
+    }
+
+    .menu-to-buy__buy-submit {
+        gap: 15px;
+    }
+
+    .buy-submit__count-picker {
+        max-width: 100px;
+        font-size: 12px;
+        line-height: 14.22px;
+        height: 38px;
+    }
+
+    .buy-submit__count-picker input[type=number] {
+        font-size: 12px;
+        line-height: 14.22px;
+    }
+
+    .count-picker__minus {
+        padding-left: 15px;
+    }
+
+    .count-picker__plus {
+        padding-right: 15px;
+    }
+
+    .menu-to-buy__buy-submit button {
+        height: 38px;
     }
 }
