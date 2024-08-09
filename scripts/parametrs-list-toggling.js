@@ -9,12 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
 		const parametrDescription = parametrWrapper.querySelector(
 			".list__parametr-description-wrapper>p",
 		);
-		parametr.addEventListener("click", () => {
-			if (parametrWrapper.classList.toggle("parametr--opened")) {
-				parametrDescriptionWrapper.style.maxHeight = `${parametrDescription.offsetHeight}px`;
-			} else {
-				parametrDescriptionWrapper.style.maxHeight = "0px";
-			}
-		});
+		if (parametrDescriptionWrapper && parametrDescription)
+			parametr?.addEventListener("click", () => {
+				if (parametrWrapper.classList.toggle("parametr--opened")) {
+					parametrDescriptionWrapper.style.maxHeight = `${parametrDescription.offsetHeight}px`;
+				} else {
+					parametrDescriptionWrapper.style.maxHeight = "0px";
+				}
+			});
 	});
 });
