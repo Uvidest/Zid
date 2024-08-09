@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
     <link rel="stylesheet" href="stylesheets/modal.css">
+    <link rel="stylesheet" href="stylesheets/cart-drawer.css">
 </head>
 
 <body>
@@ -1000,6 +1001,96 @@
                 </div>
             </div>
         </section>
+        <section class="cart-drawer">
+            <div class="cart-drawer__background"></div>
+            <div class="cart-drawer__wrapper">
+                <img class="cart-drawer__cross" src="assets/icons/cross-icon.svg" alt="cross">
+                <div class="cart-drawer__cart-header">
+                    <p class="cart-header__title">عربة التسوق</p>
+                    <p class="cart-header__suggestion">أنفق 200 يورو إضافية واحصل على شحن مجاني!</p>
+                    <div class="cart-header__track">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cart-drawer__cart-body">
+                    <div class="cart-body__products-list">
+                        <div class="products-list__selected-product">
+                            <div class="selected-product__info">
+                                <div class="info__to-buy">
+                                    <p class="to-buy__price">$256.00</p>
+                                    <p class="to-buy__name">اسم المنتج</p>
+                                    <p class="to-buy__variant">اللون:<span>زيتوني</span></p>
+                                </div>
+                                <div class="info__count-picker">
+                                    <span class="count-picker__minus">-</span>
+                                    <input type="number" value="1">
+                                    <span class="count-picker__plus">+</span>
+                                </div>
+                                <img src="assets/icons/trash-icon.svg" alt="trash">
+                            </div>
+                            <div class="selected-product__image">
+                                <img src="assets/images/grid-product-1.png" alt="product">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-body__suggested-products-slider-wrapper">
+                        <p class="suggested-products-slider-wrapper__title">تتجه هذا الشهر</p>
+                        <div class="swiper cart-body__suggested-products-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide suggested-products-slider__suggested-product">
+                                    <div class="suggested-product__suggested-info">
+                                        <p class="suggested-info__name">اسم المنتج</p>
+                                        <p class="suggested-info__price">$256.00</p>
+                                        <button class="suggested-info__button" type="button">يضيف</button>
+                                    </div>
+                                    <div class="suggested-product__product-image">
+                                        <img src="assets/images/grid-product-1.png" alt="product" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide suggested-products-slider__suggested-product">
+                                    <div class="suggested-product__suggested-info">
+                                        <p class="suggested-info__name">اسم المنتج</p>
+                                        <p class="suggested-info__price">$256.00</p>
+                                        <button class="suggested-info__button" type="button">يضيف</button>
+                                    </div>
+                                    <div class="suggested-product__product-image">
+                                        <img src="assets/images/grid-product-1.png" alt="product" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide suggested-products-slider__suggested-product">
+                                    <div class="suggested-product__suggested-info">
+                                        <p class="suggested-info__name">اسم المنتج</p>
+                                        <p class="suggested-info__price">$256.00</p>
+                                        <button class="suggested-info__button" type="button">يضيف</button>
+                                    </div>
+                                    <div class="suggested-product__product-image">
+                                        <img src="assets/images/grid-product-1.png" alt="product" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide suggested-products-slider__suggested-product">
+                                    <div class="suggested-product__suggested-info">
+                                        <p class="suggested-info__name">اسم المنتج</p>
+                                        <p class="suggested-info__price">$256.00</p>
+                                        <button class="suggested-info__button" type="button">يضيف</button>
+                                    </div>
+                                    <div class="suggested-product__product-image">
+                                        <img src="assets/images/grid-product-1.png" alt="product" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="cart-drawer__cart-footer">
+                    <p class="cart-footer__cost">$256.00</p>
+                    <p class="cart-footer__title">المجموع</p>
+                    <p class="cart-footer__info">بما في ذلك حساب الضريبة والشحن عند الخروج</p>
+                    <button class="button" type="button">الدفع</button>
+                </div>
+            </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer__wrapper page-width">
@@ -1045,6 +1136,8 @@
     <script src="scripts/mobile-menu.js" defer></script>
     <script src="scripts/modal-slider.js" defer></script>
     <script src="scripts/modal.js" defer></script>
+    <script src="scripts/cart-drawer.js" defer></script>
+    <script src="scripts/cart-drawer-suggestions-slider.js" defer></script>
 </body>
 
 </html>
