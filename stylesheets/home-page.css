@@ -330,9 +330,21 @@
 }
 
 .product-slide__product-image:hover .product-icons__like-button,
-.product-slide__product-image:hover .product-icons__add-to-cart-button {
+.product-slide__product-image:hover .product-icons__add-to-cart-button,
+.presentation-slide__product-image:hover .product-icons__like-button,
+.presentation-slide__product-image:hover .product-icons__add-to-cart-button,
+.product__product-image:hover .product-icons__like-button,
+.product__product-image:hover .product-icons__add-to-cart-button {
     opacity: 1;
     visibility: visible;
+}
+
+.product-slide__product-imag a,
+.presentation-slide__product-image a,
+.product__product-image a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .product-slide__product-info,
@@ -342,6 +354,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .product-info__price {
@@ -404,13 +417,14 @@
     max-width: 430px;
 }
 
-.presentation-slide__image {
+.presentation-slide__product-image {
     max-height: 541px;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 
-.presentation-slide__image img {
+.presentation-slide__product-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -422,6 +436,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .products-presentation__layout {
@@ -813,18 +828,19 @@
     max-width: 320px;
 }
 
-.hero-grid__product.product--large .product__image {
+.hero-grid__product.product--large .product__product-image {
     max-height: 880px;
 }
 
-.product__image {
+.product__product-image {
     width: 100%;
     max-height: 400px;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 
-.product__image img {
+.product__product-image img {
     border-radius: 10px;
     width: 100%;
     height: 100%;
@@ -952,7 +968,7 @@
         gap: 15px;
     }
 
-    .presentation-slide__image {
+    .presentation-slide__product-image {
         height: 300px;
         border-radius: 10px;
         overflow: hidden;
@@ -1086,7 +1102,7 @@
         gap: 15px;
     }
 
-    .presentation-slide__image {
+    .presentation-slide__product-image {
         height: auto;
         width: 100px;
         border-radius: 10px;
@@ -1199,7 +1215,7 @@
         gap: 15px;
     }
 
-    .hero-grid__product .product__image {
+    .hero-grid__product .product__product-image {
         aspect-ratio: 4 / 5;
     }
 
