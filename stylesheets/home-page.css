@@ -994,6 +994,10 @@
         width: 100%;
         max-width: 100%;
     }
+
+    .products-presentation .product-image__product-icons {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
