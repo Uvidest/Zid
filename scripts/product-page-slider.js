@@ -24,7 +24,7 @@ const mainSlider = new Swiper(".hero-product__product-slider", {
 		},
 		768: {
 			spaceBetween: 20,
-			effect: "fade",
+			slidesPerView: 1,
 		},
 	},
 });

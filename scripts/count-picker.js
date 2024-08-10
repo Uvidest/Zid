@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
 			countPicker.value -= 1;
 		}
 	});
-	plus.addEventListener("click", () => {
+	plus?.addEventListener("click", () => {
 		if (countPicker.value < 999) {
 			countPicker.value = +countPicker.value + 1;
 		}
 	});
 
-	countPicker.addEventListener("input", () => {
+	countPicker?.addEventListener("input", () => {
 		if (countPicker.value <= 1) {
 			countPicker.value = 1;
 		}
