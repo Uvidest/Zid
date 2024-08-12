@@ -45,6 +45,8 @@
     border-radius: 50px;
     display: none;
     background: var(--color-white);
+    color: var(--color-black);
+    transition: all .3s ease;
 }
 
 .body__facets-button span {
@@ -52,6 +54,15 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 14.22px;
+}
+
+.body__facets-button:active {
+    background: var(--color-black);
+    color: var(--color-white);
+}
+
+.body__facets-button:active path {
+    stroke: var(--color-white);
 }
 
 .body__products-grid {
@@ -690,7 +701,6 @@
     font-weight: 300;
     line-height: 16.59px;
     text-align: right;
-
 }
 
 .range-inputs__min,
@@ -735,6 +745,9 @@
 }
 
 @media screen and (max-width:950px) {
+    .products-grid__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .range-inputs__min input[type="text"],
     .range-inputs__max input[type="text"] {
@@ -806,6 +819,20 @@
         position: absolute;
         top: 30px;
         left: 15px;
+    }
+
+    .range-inputs__min,
+    .range-inputs__max {
+        padding: 1px;
+        padding-left: 10px;
+        flex-grow: 2;
+        max-width: none;
+        gap: 5px;
+    }
+
+    .range-inputs__min input[type="text"],
+    .range-inputs__max input[type="text"] {
+        padding: 10px;
     }
 }
 
