@@ -5,17 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/collection-page.css">
+    <link rel="stylesheet" href="stylesheets/swiper-bundle.min.css">
     <link rel="stylesheet" href="stylesheets/base.css">
     <link rel="stylesheet" href="stylesheets/header.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
     <link rel="stylesheet" href="stylesheets/button.css">
+    <link rel="stylesheet" href="stylesheets/modal.css">
+    <link rel="stylesheet" href="stylesheets/cart-drawer.css">
     <title>Collection</title>
 </head>
 
 <body>
     <div class="announcement-bar default-paddings">
         <div class="announcement-bar__wrapper page-width">
-            <a class="announcement-bar__buy-btn" href="/">تسوق الآن</a>
+            <a class="announcement-bar__buy-button" href="#">تسوق الآن</a>
             <div class="announcement-bar__timer">
                 <span class="timer__days">7</span>
                 <span>:</span>
@@ -31,23 +34,25 @@
     <header class="header default-paddings">
         <div class="header__wrapper page-width">
             <div class="header__icons-nav">
-                <a class="icons-nav__cart" href="/">
+                <a class="icons-nav__cart" href="#">
                     <img src="assets/icons/cart-icon.svg" alt="cart icon">
                 </a>
                 <div class="icons-nav__search">
-                    <a href="/">
+                    <a href="#">
                         <img src="assets/icons/search-icon.svg" alt="search-icon">
                     </a>
                     <input type="text" placeholder="يبحث">
                 </div>
             </div>
             <div class="header__menu-nav">
-                <a href="/">مدونة</a>
-                <a href="/">اتصال</a>
-                <a href="/">معلومات عنا</a>
-                <a href="/">متجر</a>
+                <a href="#">مدونة</a>
+                <a href="#">اتصال</a>
+                <a href="#">معلومات عنا</a>
+                <a href="#">متجر</a>
             </div>
-            <a href="/" class="header__logo">logo</a>
+            <a href="/" class="header__logo">
+                <img src="assets/icons/logo-icon.svg" alt="logo">
+            </a>
             <div class="header__menu-button">
                 <button type="button">
                     <img src="assets/icons/menu-button.svg" alt="menu button">
@@ -68,10 +73,10 @@
                             <input type="text" placeholder="يبحث">
                         </div>
                     </div>
-                    <a href="/">متجر</a>
-                    <a href="/">معلومات عنا</a>
-                    <a href="/">اتصال</a>
-                    <a href="/">مدونة</a>
+                    <a href="#">متجر</a>
+                    <a href="#">معلومات عنا</a>
+                    <a href="#">اتصال</a>
+                    <a href="#">مدونة</a>
                 </div>
             </div>
         </div>
@@ -97,11 +102,13 @@
                     </button>
                     <div class="body__products-grid">
                         <div class="products-grid__wrapper">
-                            <a class="products-grid__product-card" href="/">
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/product-4.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/product-4.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -109,7 +116,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -119,7 +126,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper">
@@ -139,13 +146,15 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="products-grid__product-card" href="/">
+                                </a>
+                            </div>
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/product-3.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/product-3.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -153,7 +162,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -163,7 +172,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper--solo">
@@ -175,13 +184,15 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="products-grid__product-card" href="/">
+                                </a>
+                            </div>
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/product-2.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/product-2.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -189,7 +200,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -199,7 +210,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper--solo">
@@ -211,13 +222,15 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="products-grid__product-card" href="/">
+                                </a>
+                            </div>
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/product-1.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/product-1.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -225,7 +238,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -235,7 +248,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper--solo">
@@ -247,13 +260,15 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="products-grid__product-card" href="/">
+                                </a>
+                            </div>
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/grid-product-4.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/grid-product-4.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -261,7 +276,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -271,7 +286,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper--solo">
@@ -283,13 +298,15 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="products-grid__product-card" href="/">
+                                </a>
+                            </div>
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/grid-product-3.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/grid-product-3.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -297,7 +314,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -307,7 +324,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper--solo">
@@ -319,13 +336,15 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="products-grid__product-card" href="/">
+                                </a>
+                            </div>
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/grid-product-5.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/grid-product-5.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -333,7 +352,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -343,7 +362,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper">
@@ -363,13 +382,15 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="products-grid__product-card" href="/">
+                                </a>
+                            </div>
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/grid-product-2.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/grid-product-2.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -377,7 +398,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -387,7 +408,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper--solo">
@@ -399,13 +420,15 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
-                            <a class="products-grid__product-card" href="/">
+                                </a>
+                            </div>
+                            <div class="products-grid__product-card">
                                 <div class="product-card__product-image">
-                                    <img src="assets/images/grid-product-1.png" alt="product">
+                                    <a href="#">
+                                        <img src="assets/images/grid-product-1.png" alt="product">
+                                    </a>
                                     <div class="product-image__product-icons">
-                                        <button class="product-icons__like-btn">
+                                        <button class="product-icons__like-button">
                                             <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path
@@ -413,7 +436,7 @@
                                                     stroke="#1E1E1E" stroke-width="1.2" />
                                             </svg>
                                         </button>
-                                        <button class="product-icons__add-to-cart-btn">
+                                        <button class="product-icons__add-to-cart-button open-modal">
                                             <svg width="17" height="19" viewBox="0 0 17 19" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -423,7 +446,7 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="product-card__product-info">
+                                <a href="#" class="product-card__product-info">
                                     <p class="product-info__price">$256.00</p>
                                     <p class="product-info__name">اسم المنتج</p>
                                     <div class="product-info__wrapper--solo">
@@ -435,8 +458,8 @@
                                             <img src="assets/icons/star-filled-icon.svg" alt="star">
                                         </div>
                                     </div>
-                                </div>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                         <div class="products-grid__pagination">
                             <a class="pagination__bullet bullet--active" href="/">1</a>
@@ -557,10 +580,186 @@
                             </div>
                         </div>
                         <div class="facets-form__submit">
-                            <button class="btn" type="submit">للتقديم</button>
+                            <button class="button" type="submit">للتقديم</button>
                         </div>
                     </form>
                 </div>
+            </div>
+        </section>
+        <section class="quick-view-modal">
+            <div class="quick-view-modal__background"></div>
+            <div class="quick-view-modal__wrapper page-width">
+                <img class="quick-view-modal__cross" src="assets/icons/cross-icon.svg" alt="cross">
+                <div class="quick-view-modal__hero-product-wrapper">
+                    <div class="quick-view-modal__hero-product">
+                        <div class="hero-product__main-info">
+                            <p class="main-info__price">$256.00</p>
+                            <p class="main-info__name">اسم المنتج</p>
+                            <div class="main-info__wrapper">
+                                <p class="main-info__compare-at-price">$286.00</p>
+                                <div class="main-info__rating">
+                                    <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                    <img src="assets/icons/star-filled-icon.svg" alt="star">
+                                </div>
+                            </div>
+                            <p class="product-info__description">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                                لصفحة
+                                ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
+                                يقرأها.
+                            </p>
+                        </div>
+                        <div class="product-info__menu-to-buy">
+                            <span class="menu-to-buy__like-button">
+                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.823 11.0729C10.0375 12.6366 8.21082 13.6458 7.99998 13.759C7.78914 13.6458 5.96248 12.6366 4.17698 11.0729C2.31749 9.44447 0.666829 7.35696 0.66665 5.15869C0.667868 4.15336 1.06777 3.18955 1.77865 2.47867C2.48954 1.76778 3.45335 1.36788 4.45868 1.36666C5.74589 1.36676 6.84309 1.91734 7.52018 2.81913L7.99998 3.45816L8.47979 2.81913C9.15688 1.91734 10.2541 1.36676 11.5413 1.36666C12.5466 1.36788 13.5104 1.76778 14.2213 2.47867C14.9321 3.18946 15.332 4.15313 15.3333 5.15833C15.3333 7.35673 13.6826 9.44438 11.823 11.0729Z"
+                                        stroke="#1E1E1E" stroke-width="1.2" />
+                                </svg>
+                            </span>
+                            <div class="menu-to-buy__variants">
+                                <p class="variants__title">لون</p>
+                                <div class="variants__color-swatches">
+                                    <input class="color-swatches__color-1" type="checkbox">
+                                    <input class="color-swatches__color-2" type="checkbox">
+                                    <input class="color-swatches__color-3" type="checkbox">
+                                    <input class="color-swatches__color-4" type="checkbox">
+                                    <input class="color-swatches__color-5" type="checkbox">
+                                    <input class="color-swatches__color-6" type="checkbox">
+                                </div>
+                            </div>
+                            <div class="menu-to-buy__buy-submit">
+                                <div class="buy-submit__count-picker">
+                                    <span class="count-picker__minus">-</span>
+                                    <input type="number" value="1">
+                                    <span class="count-picker__plus">+</span>
+                                </div>
+                                <button class="button add-to-cart" type="button">للتقديم</button>
+                            </div>
+                            <div class="menu-to-buy__product-button">
+                                <button type="button">
+                                    <img src="assets/icons/slider-button-next.svg" alt="arrow">
+                                    عرض التفاصيل الكاملة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quick-view-modal__slider-wrapper">
+                        <div class="swiper quick-view-modal__product-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide product-slider__slide">
+                                    <img src="assets/images/grid-product-1.png" alt="product" />
+                                </div>
+                                <div class="swiper-slide product-slider__slide">
+                                    <img src="assets/images/grid-product-2.png" alt="product" />
+                                </div>
+                                <div class="swiper-slide product-slider__slide">
+                                    <img src="assets/images/grid-product-3.png" alt="product" />
+                                </div>
+                                <div class="swiper-slide product-slider__slide">
+                                    <img src="assets/images/grid-product-4.png" alt="product" />
+                                </div>
+                                <div class="swiper-slide product-slider__slide">
+                                    <img src="assets/images/grid-product-5.png" alt="product" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cart-drawer">
+            <div class="cart-drawer__background"></div>
+            <div class="cart-drawer__wrapper">
+                <img class="cart-drawer__cross" src="assets/icons/cross-icon.svg" alt="cross">
+                <div class="cart-drawer__cart-header">
+                    <p class="cart-header__title">عربة التسوق</p>
+                    <p class="cart-header__suggestion">أنفق 200 يورو إضافية واحصل على شحن مجاني!</p>
+                    <div class="cart-header__track">
+                        <div></div>
+                    </div>
+                </div>
+                <div class="cart-drawer__cart-body">
+                    <div class="cart-body__products-list">
+                        <div class="products-list__selected-product">
+                            <div class="selected-product__info">
+                                <div class="info__to-buy">
+                                    <p class="to-buy__price">$256.00</p>
+                                    <p class="to-buy__name">اسم المنتج</p>
+                                    <p class="to-buy__variant">اللون:<span>زيتوني</span></p>
+                                </div>
+                                <div class="info__count-picker">
+                                    <span class="count-picker__minus">-</span>
+                                    <input type="number" value="1">
+                                    <span class="count-picker__plus">+</span>
+                                </div>
+                                <img src="assets/icons/trash-icon.svg" alt="trash">
+                            </div>
+                            <div class="selected-product__image">
+                                <img src="assets/images/grid-product-1.png" alt="product">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-body__suggested-products-slider-wrapper">
+                        <p class="suggested-products-slider-wrapper__title">تتجه هذا الشهر</p>
+                        <div class="swiper cart-body__suggested-products-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide suggested-products-slider__suggested-product">
+                                    <div class="suggested-product__suggested-info">
+                                        <p class="suggested-info__name">اسم المنتج</p>
+                                        <p class="suggested-info__price">$256.00</p>
+                                        <button class="suggested-info__button" type="button">يضيف</button>
+                                    </div>
+                                    <div class="suggested-product__product-image">
+                                        <img src="assets/images/grid-product-1.png" alt="product" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide suggested-products-slider__suggested-product">
+                                    <div class="suggested-product__suggested-info">
+                                        <p class="suggested-info__name">اسم المنتج</p>
+                                        <p class="suggested-info__price">$256.00</p>
+                                        <button class="suggested-info__button" type="button">يضيف</button>
+                                    </div>
+                                    <div class="suggested-product__product-image">
+                                        <img src="assets/images/grid-product-1.png" alt="product" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide suggested-products-slider__suggested-product">
+                                    <div class="suggested-product__suggested-info">
+                                        <p class="suggested-info__name">اسم المنتج</p>
+                                        <p class="suggested-info__price">$256.00</p>
+                                        <button class="suggested-info__button" type="button">يضيف</button>
+                                    </div>
+                                    <div class="suggested-product__product-image">
+                                        <img src="assets/images/grid-product-1.png" alt="product" />
+                                    </div>
+                                </div>
+                                <div class="swiper-slide suggested-products-slider__suggested-product">
+                                    <div class="suggested-product__suggested-info">
+                                        <p class="suggested-info__name">اسم المنتج</p>
+                                        <p class="suggested-info__price">$256.00</p>
+                                        <button class="suggested-info__button" type="button">يضيف</button>
+                                    </div>
+                                    <div class="suggested-product__product-image">
+                                        <img src="assets/images/grid-product-1.png" alt="product" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="cart-drawer__cart-footer">
+                    <p class="cart-footer__cost">$256.00</p>
+                    <p class="cart-footer__title">المجموع</p>
+                    <p class="cart-footer__info">بما في ذلك حساب الضريبة والشحن عند الخروج</p>
+                    <button class="button" type="button">الدفع</button>
+                </div>
+            </div>
             </div>
         </section>
     </main>
@@ -598,9 +797,14 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/swiper-bundle.min.js" defer></script>
     <script src="scripts/mobile-menu.js" defer></script>
     <script src="scripts/price-range.js" defer></script>
     <script src="scripts/facets.js" defer></script>
+    <script src="scripts/modal-slider.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/cart-drawer.js" defer></script>
+    <script src="scripts/cart-drawer-suggestions-slider.js" defer></script>
 </body>
 
 </html>
