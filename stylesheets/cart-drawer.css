@@ -181,16 +181,20 @@
     display: inline-flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
     padding-left: 15px;
     cursor: pointer;
+    flex-grow: 1;
 }
 
 .count-picker__plus {
     display: inline-flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
     padding-right: 15px;
     cursor: pointer;
+    flex-grow: 1;
 }
 
 .info__count-picker input[type="number"] {
@@ -306,6 +310,13 @@
     border-radius: 50px;
     margin-top: auto;
     height: 28px;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.suggested-info__button:hover {
+    background: var(--color-black);
+    color: var(--color-white);
 }
 
 .suggested-product__product-image {

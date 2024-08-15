@@ -3,11 +3,13 @@ const thubmsSlider = new Swiper(".product-slider__thumbs-slider", {
 	slidesPerView: "auto",
 	direction: "vertical",
 	navigation: {
-		prevEl: ".thumbs-slider__swiper-button-prev",
-		nextEl: ".thumbs-slider__swiper-button-next",
+		prevEl: ".thumbs-slider__swiper-button--prev",
+		nextEl: ".thumbs-slider__swiper-button--next",
 	},
 });
 const mainSlider = new Swiper(".hero-product__product-slider", {
+	spaceBetween: 15,
+	slidesPerView: 1.1,
 	initialSlide: document.querySelectorAll(
 		".hero-product__product-slider .swiper-slide",
 	).length,
@@ -19,8 +21,7 @@ const mainSlider = new Swiper(".hero-product__product-slider", {
 	},
 	breakpoints: {
 		1: {
-			spaceBetween: 15,
-			slidesPerView: 1.1,
+
 		},
 		768: {
 			spaceBetween: 20,
