@@ -20,9 +20,6 @@ const mainSlider = new Swiper(".hero-product__product-slider", {
 		el: ".hero-product__slider-wrapper .swiper-pagination",
 	},
 	breakpoints: {
-		1: {
-
-		},
 		768: {
 			spaceBetween: 20,
 			slidesPerView: 1,
