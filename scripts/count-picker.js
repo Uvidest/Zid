@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		".count-picker",
 	);
 
-	countPickerWrappers.forEach((countPickerWrapper) => {
+	countPickerWrappers?.forEach((countPickerWrapper) => {
 		const countPicker = countPickerWrapper.querySelector('input[type="number"]');
 		const minus = countPickerWrapper.querySelector(".count-picker__minus");
 		const plus = countPickerWrapper.querySelector(".count-picker__plus");
