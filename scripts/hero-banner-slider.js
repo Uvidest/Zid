@@ -13,10 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
 			prevEl: ".hero-banner__navigation-wrapper .swiper-button-prev",
 		},
 		breakpoints: {
-			768: {
+			1: {
 				spaceBetween: 15,
 			},
-			1: {},
+			768: {
+				spaceBetween: 20,
+			},
 		},
 	});
 });

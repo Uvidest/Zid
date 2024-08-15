@@ -9,8 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
 			prevEl: ".categories__navigation-wrapper .swiper-button-prev",
 		},
 		breakpoints: {
-			768: {
+			1: {
 				spaceBetween: 15,
+			},
+			768: {
+				spaceBetween: 20,
 			},
 		},
 	});

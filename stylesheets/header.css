@@ -11,7 +11,7 @@
     gap: 30px;
 }
 
-.announcement-bar__buy-btn {
+.announcement-bar__buy-button {
     font-family: Rubik;
     font-size: 12px;
     font-weight: 500;
@@ -22,7 +22,7 @@
     position: relative;
 }
 
-.announcement-bar__buy-btn::after {
+.announcement-bar__buy-button::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -160,13 +160,6 @@
 }
 
 .header__logo {
-    font-family: Rubik;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 59.25px;
-    text-align: left;
-    color: var(--color-black);
-    text-decoration: none;
     z-index: 2;
 }
 
@@ -315,9 +308,7 @@
         gap: 5px;
     }
 
-    .header__logo {
-        font-size: 35px;
-        font-weight: 700;
-        line-height: 41.48px;
+    .header__logo img {
+        width: 75px;
     }
 }
