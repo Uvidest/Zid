@@ -185,6 +185,7 @@
     padding-left: 15px;
     cursor: pointer;
     flex-grow: 1;
+    user-select: none;
 }
 
 .count-picker__plus {
@@ -195,6 +196,7 @@
     padding-right: 15px;
     cursor: pointer;
     flex-grow: 1;
+    user-select: none;
 }
 
 .info__count-picker input[type="number"] {
@@ -207,8 +209,9 @@
     line-height: 14.22px;
     text-align: right;
     color: var(--color-black);
-    max-width: calc(100% - 45px * 2);
+    max-width: calc(100% - 30px * 2);
     height: 100%;
+    text-align: center;
 }
 
 .info__count-picker input[type=number]::-webkit-outer-spin-button,
@@ -310,13 +313,6 @@
     border-radius: 50px;
     margin-top: auto;
     height: 28px;
-    transition: all .3s ease;
-    cursor: pointer;
-}
-
-.suggested-info__button:hover {
-    background: var(--color-black);
-    color: var(--color-white);
 }
 
 .suggested-product__product-image {
