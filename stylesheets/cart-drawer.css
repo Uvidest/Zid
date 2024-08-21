@@ -181,16 +181,22 @@
     display: inline-flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
     padding-left: 15px;
     cursor: pointer;
+    flex-grow: 1;
+    user-select: none;
 }
 
 .count-picker__plus {
     display: inline-flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
     padding-right: 15px;
     cursor: pointer;
+    flex-grow: 1;
+    user-select: none;
 }
 
 .info__count-picker input[type="number"] {
@@ -203,8 +209,9 @@
     line-height: 14.22px;
     text-align: right;
     color: var(--color-black);
-    max-width: calc(100% - 45px * 2);
+    max-width: calc(100% - 30px * 2);
     height: 100%;
+    text-align: center;
 }
 
 .info__count-picker input[type=number]::-webkit-outer-spin-button,
