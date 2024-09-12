@@ -161,7 +161,7 @@
 }
 
 .menu-to-buy__variants {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-left: 65px;
 }
 
@@ -303,26 +303,28 @@
     height: 50px;
 }
 
-.count-picker__minus {
+.count-picker__minus,
+.count-picker__plus {
     display: inline-flex;
     height: 100%;
     align-items: center;
     justify-content: center;
-    padding-left: 30px;
     cursor: pointer;
     flex-grow: 1;
     user-select: none;
 }
 
+.count-picker__minus[disable="true"],
+.count-picker__plus[disable="true"] {
+    opacity: .5;
+}
+
+.count-picker__minus {
+    padding-left: 30px;
+}
+
 .count-picker__plus {
-    display: inline-flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
     padding-right: 30px;
-    cursor: pointer;
-    flex-grow: 1;
-    user-select: none;
 }
 
 .buy-submit__count-picker input[type="number"] {
@@ -502,10 +504,6 @@
 
     .menu-to-buy__like-button {
         display: none;
-    }
-
-    .menu-to-buy__variants {
-        margin-bottom: 30px;
     }
 
     .menu-to-buy__buy-submit {

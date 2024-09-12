@@ -1,7 +1,8 @@
 .announcement-bar {
     background: var(--color-black);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 40px;
 }
 
 .announcement-bar__wrapper {
@@ -89,6 +90,7 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    height: 99px;
 }
 
 .header__icons-nav {
@@ -306,6 +308,12 @@
 
     .announcement-bar__timer {
         gap: 5px;
+    }
+
+    .header__wrapper {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 71px;
     }
 
     .header__logo img {

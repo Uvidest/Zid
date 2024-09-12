@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
 		beforeElement.style.width = "40%";
 		const listener = (event) => {
 			const distance = beforeAfterWrapper.clientWidth;
-			const max = distance - 20;
-			const min = 20;
+			const max = distance - 15;
+			const min = 15;
 			const mouseX = Math.max(
 				min,
 				Math.min(
@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			);
 			const mousePersent = (mouseX * 100) / distance;
 			beforeElement.style.width = `${mousePersent}%`;
+			beforeAfterButton.style.left = `${mousePersent}%`;
 		};
 		beforeAfterButton.addEventListener("mousedown", (event) => {
 			document.addEventListener("mousemove", listener);

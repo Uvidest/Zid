@@ -91,14 +91,14 @@
                             <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
                                 الشكل
                                 الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-                            <a class="button" href="#">تسوق الآن</a>
+                            <a class="button" href="collection-page.html">تسوق الآن</a>
                         </div>
                         <div class="swiper-slide hero-banner__banner-slide banner-slide-2">
                             <h2>متجر أثاث وديكور على الإنترنت</h2>
                             <p>هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على
                                 الشكل
                                 الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها.</p>
-                            <a class="button" href="#">تسوق الآن</a>
+                            <a class="button" href="collection-page.html">تسوق الآن</a>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -893,8 +893,9 @@
         </section>
         <section class="hero-video">
             <div class="hero-video__wrapper">
-                <video src="assets/videos/nature.mp4" poster="assets/images/video-poster.jpg" autoplay muted
-                    loop></video>
+                <video autoplay muted loop preload="auto" playsinline>
+                    <source src="assets/videos/nature.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
         <section class="logo-grid">
@@ -947,14 +948,6 @@
                             </p>
                         </div>
                         <div class="product-info__menu-to-buy">
-                            <span class="menu-to-buy__like-button">
-                                <svg width="16" height="15" viewBox="0 0 16 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M11.823 11.0729C10.0375 12.6366 8.21082 13.6458 7.99998 13.759C7.78914 13.6458 5.96248 12.6366 4.17698 11.0729C2.31749 9.44447 0.666829 7.35696 0.66665 5.15869C0.667868 4.15336 1.06777 3.18955 1.77865 2.47867C2.48954 1.76778 3.45335 1.36788 4.45868 1.36666C5.74589 1.36676 6.84309 1.91734 7.52018 2.81913L7.99998 3.45816L8.47979 2.81913C9.15688 1.91734 10.2541 1.36676 11.5413 1.36666C12.5466 1.36788 13.5104 1.76778 14.2213 2.47867C14.9321 3.18946 15.332 4.15313 15.3333 5.15833C15.3333 7.35673 13.6826 9.44438 11.823 11.0729Z"
-                                        stroke="#1E1E1E" stroke-width="1.2" />
-                                </svg>
-                            </span>
                             <div class="menu-to-buy__variants">
                                 <p class="variants__title">لون</p>
                                 <div class="variants__color-swatches">
@@ -968,7 +961,7 @@
                             </div>
                             <div class="menu-to-buy__buy-submit">
                                 <div class="buy-submit__count-picker" data-count-picker>
-                                    <span class="count-picker__minus">-</span>
+                                    <span class="count-picker__minus" disable="true">-</span>
                                     <input type="number" value="1">
                                     <span class="count-picker__plus">+</span>
                                 </div>
@@ -1142,6 +1135,7 @@
     <script src="scripts/mobile-menu.js" defer></script>
     <script src="scripts/modal-slider.js" defer></script>
     <script src="scripts/modal.js" defer></script>
+    <script src="scripts/count-picker.js" defer></script>
     <script src="scripts/cart-drawer.js" defer></script>
     <script src="scripts/cart-drawer-suggestions-slider.js" defer></script>
 </body>

@@ -279,17 +279,27 @@
     height: 50px;
 }
 
-.count-picker__minus {
-    display: inline-flex;
-    height: 100%;
-    align-items: center;
-    padding-left: 30px;
-}
-
+.count-picker__minus,
 .count-picker__plus {
     display: inline-flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-grow: 1;
+    user-select: none;
+}
+
+.count-picker__minus[disable="true"],
+.count-picker__plus[disable="true"] {
+    opacity: .5;
+}
+
+.count-picker__minus {
+    padding-left: 30px;
+}
+
+.count-picker__plus {
     padding-right: 30px;
 }
 
