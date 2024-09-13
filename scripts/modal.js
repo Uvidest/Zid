@@ -4,14 +4,20 @@ document.addEventListener("DOMContentLoaded", () => {
 	const modalBackground = modalWrapper.querySelector(
 		".quick-view-modal__background",
 	);
+
+	let scrollTop = 0;
+
 	const openModalButtons = document.querySelectorAll(".open-modal");
 
 	function closeModal() {
 		modalWrapper?.classList.remove("modal--opened");
+		toggleScroll(false, scrollTop);
 	}
 
 	function openModal() {
 		modalWrapper?.classList.add("modal--opened");
+		scrollTop = window.scrollY;
+		toggleScroll(true, scrollTop);
 	}
 
 	openModalButtons?.forEach((button) => {
@@ -20,10 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
-	modalCross?.addEventListener("click", () => {
-		closeModal();
-	});
-	modalBackground?.addEventListener("click", () => {
-		closeModal();
+	[modalCross, modalBackground].forEach((element) => {
+		element.addEventListener('click', () => {
+			closeModal();
+		});
 	});
 });

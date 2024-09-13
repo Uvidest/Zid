@@ -12,6 +12,15 @@
     gap: 30px;
 }
 
+.announcement-bar__wrapper.announcement-bar--without-timer {
+    gap: 8px;
+}
+
+.announcement-bar__icon {
+    width: 24px;
+    height: 24px;
+}
+
 .announcement-bar__buy-button {
     font-family: Rubik;
     font-size: 12px;
@@ -80,7 +89,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 100;
 }
 
 .header__wrapper {
@@ -177,6 +186,7 @@
     justify-content: center;
     border: none;
     outline: none;
+    cursor: pointer;
     border-radius: 100%;
     background: var(--color-gray);
 }
