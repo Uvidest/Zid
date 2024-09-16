@@ -130,7 +130,7 @@
                         </div>
                         <div class="menu-to-buy__buy-submit">
                             <div class="buy-submit__count-picker" data-count-picker>
-                                <span class="count-picker__minus">-</span>
+                                <span class="count-picker__minus" disable="true">-</span>
                                 <input type="number" value="1">
                                 <span class="count-picker__plus">+</span>
                             </div>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="hero-product__slider-wrapper">
-                    <div class="swiper hero-product__product-slider">
+                    <div class="swiper hero-product__product-slider" dir="rtl">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide product-slider__slide">
                                 <img src="assets/images/grid-product-1.png" alt="product" />
@@ -157,8 +157,8 @@
                                 <img src="assets/images/grid-product-5.png" alt="product" />
                             </div>
                         </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="swiper-pagination"></div>
                     <div class="swiper product-slider__thumbs-slider">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide thumbs-slider__slide">
@@ -177,7 +177,6 @@
                                 <img src="assets/images/grid-product-5.png" alt="product" />
                             </div>
                         </div>
-                        <div class="thumbs-slider__gradient--top"></div>
                         <div class="thumbs-slider__gradient--bottom"></div>
                         <button class="thumbs-slider__swiper-button--prev">
                             <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
@@ -470,27 +469,7 @@
                                     </a>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
-                    <div class="products-grid__navigation-wrapper">
-                        <button class="swiper-button-prev">
-                            <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M10 17.3333C10 16.45 9.08375 15.1309 8.15625 14.0238C6.96375 12.5952 5.53875 11.3488 3.905 10.3976C2.68 9.68452 1.195 8.99999 0 8.99999M0 8.99999C1.195 8.99999 2.68125 8.31547 3.905 7.60238C5.53875 6.65 6.96375 5.40357 8.15625 3.97738C9.08375 2.86904 10 1.54761 10 0.666662M0 8.99999L30 8.99999"
-                                    stroke="#1E1E1E" />
-                            </svg>
-                        </button>
-                        <button class="swiper-button-next">
-                            <svg width="30" height="18" viewBox="0 0 30 18" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20 17.3333C20 16.45 20.9162 15.1309 21.8437 14.0238C23.0362 12.5952 24.4612 11.3488 26.095 10.3976C27.32 9.68452 28.805 8.99999 30 8.99999M30 8.99999C28.805 8.99999 27.3187 8.31547 26.095 7.60238C24.4612 6.65 23.0362 5.40357 21.8437 3.97738C20.9162 2.86904 20 1.54761 20 0.666662M30 8.99999L0 8.99999"
-                                    stroke="#1E1E1E" />
-                            </svg>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -514,7 +493,7 @@
                                     <img src="assets/icons/star-filled-icon.svg" alt="star">
                                 </div>
                             </div>
-                            <p class="product-info__description">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
+                            <p class="main-info__description">هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء
                                 لصفحة
                                 ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي
                                 يقرأها.
@@ -542,7 +521,7 @@
                             </div>
                             <div class="menu-to-buy__buy-submit">
                                 <div class="buy-submit__count-picker" data-count-picker>
-                                    <span class="count-picker__minus">-</span>
+                                    <span class="count-picker__minus" disable="true">-</span>
                                     <input type="number" value="1">
                                     <span class="count-picker__plus">+</span>
                                 </div>
@@ -602,7 +581,7 @@
                                     <p class="to-buy__variant">اللون:<span>زيتوني</span></p>
                                 </div>
                                 <div class="info__count-picker" data-count-picker>
-                                    <span class="count-picker__minus">-</span>
+                                    <span class="count-picker__minus" disable="true">-</span>
                                     <input type="number" value="1">
                                     <span class="count-picker__plus">+</span>
                                 </div>
@@ -613,54 +592,54 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cart-body__suggested-products-slider-wrapper">
-                        <p class="suggested-products-slider-wrapper__title">تتجه هذا الشهر</p>
-                        <div class="swiper cart-body__suggested-products-slider">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide suggested-products-slider__suggested-product">
-                                    <div class="suggested-product__suggested-info">
-                                        <p class="suggested-info__name">اسم المنتج</p>
-                                        <p class="suggested-info__price">$256.00</p>
-                                        <button class="suggested-info__button" type="button">يضيف</button>
-                                    </div>
-                                    <div class="suggested-product__product-image">
-                                        <img src="assets/images/grid-product-1.png" alt="product" />
-                                    </div>
+                </div>
+                <div class="cart-drawer__suggested-products-slider-wrapper">
+                    <p class="suggested-products-slider-wrapper__title">تتجه هذا الشهر</p>
+                    <div class="swiper cart-body__suggested-products-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide suggested-products-slider__suggested-product">
+                                <div class="suggested-product__suggested-info">
+                                    <p class="suggested-info__name">اسم المنتج</p>
+                                    <p class="suggested-info__price">$256.00</p>
+                                    <button class="suggested-info__button" type="button">يضيف</button>
                                 </div>
-                                <div class="swiper-slide suggested-products-slider__suggested-product">
-                                    <div class="suggested-product__suggested-info">
-                                        <p class="suggested-info__name">اسم المنتج</p>
-                                        <p class="suggested-info__price">$256.00</p>
-                                        <button class="suggested-info__button" type="button">يضيف</button>
-                                    </div>
-                                    <div class="suggested-product__product-image">
-                                        <img src="assets/images/grid-product-1.png" alt="product" />
-                                    </div>
+                                <a href="/" target="_blank" class="suggested-product__product-image">
+                                    <img src="assets/images/grid-product-1.png" alt="product" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide suggested-products-slider__suggested-product">
+                                <div class="suggested-product__suggested-info">
+                                    <p class="suggested-info__name">اسم المنتج</p>
+                                    <p class="suggested-info__price">$256.00</p>
+                                    <button class="suggested-info__button" type="button">يضيف</button>
                                 </div>
-                                <div class="swiper-slide suggested-products-slider__suggested-product">
-                                    <div class="suggested-product__suggested-info">
-                                        <p class="suggested-info__name">اسم المنتج</p>
-                                        <p class="suggested-info__price">$256.00</p>
-                                        <button class="suggested-info__button" type="button">يضيف</button>
-                                    </div>
-                                    <div class="suggested-product__product-image">
-                                        <img src="assets/images/grid-product-1.png" alt="product" />
-                                    </div>
+                                <a href="/" target="_blank" class="suggested-product__product-image">
+                                    <img src="assets/images/grid-product-1.png" alt="product" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide suggested-products-slider__suggested-product">
+                                <div class="suggested-product__suggested-info">
+                                    <p class="suggested-info__name">اسم المنتج</p>
+                                    <p class="suggested-info__price">$256.00</p>
+                                    <button class="suggested-info__button" type="button">يضيف</button>
                                 </div>
-                                <div class="swiper-slide suggested-products-slider__suggested-product">
-                                    <div class="suggested-product__suggested-info">
-                                        <p class="suggested-info__name">اسم المنتج</p>
-                                        <p class="suggested-info__price">$256.00</p>
-                                        <button class="suggested-info__button" type="button">يضيف</button>
-                                    </div>
-                                    <div class="suggested-product__product-image">
-                                        <img src="assets/images/grid-product-1.png" alt="product" />
-                                    </div>
+                                <a href="/" target="_blank" class="suggested-product__product-image">
+                                    <img src="assets/images/grid-product-1.png" alt="product" />
+                                </a>
+                            </div>
+                            <div class="swiper-slide suggested-products-slider__suggested-product">
+                                <div class="suggested-product__suggested-info">
+                                    <p class="suggested-info__name">اسم المنتج</p>
+                                    <p class="suggested-info__price">$256.00</p>
+                                    <button class="suggested-info__button" type="button">يضيف</button>
                                 </div>
+                                <a href="/" target="_blank" class="suggested-product__product-image">
+                                    <img src="assets/images/grid-product-1.png" alt="product" />
+                                </a>
                             </div>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 <div class="cart-drawer__cart-footer">
                     <p class="cart-footer__cost">$256.00</p>
@@ -708,6 +687,7 @@
     </footer>
     <script src="scripts/swiper-bundle.min.js" defer></script>
     <script src="scripts/product-page-slider.js" defer></script>
+    <script src="scripts/global.js" defer></script>
     <script src="scripts/products-grid-slider.js" defer></script>
     <script src="scripts/count-picker.js" defer></script>
     <script src="scripts/parameters-list-toggling.js" defer></script>

@@ -42,6 +42,7 @@
     position: absolute;
     top: 20px;
     left: 20px;
+    cursor: pointer;
 }
 
 .cart-drawer__cart-header {
@@ -88,10 +89,10 @@
 
 .cart-drawer__cart-body {
     max-height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    flex-grow: 1;
     border-bottom: 1px solid var(--color-gray);
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
 }
 
 .cart-body__products-list {
@@ -100,6 +101,8 @@
     gap: 20px;
     border-bottom: 1px solid var(--color-gray);
     padding-bottom: 30px;
+    overflow-y: auto;
+    max-height: 100%;
 }
 
 .products-list__selected-product {
@@ -242,11 +245,13 @@
     border-radius: 10px;
 }
 
-.cart-body__suggested-products-slider-wrapper {
+.cart-drawer__suggested-products-slider-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
 }
 
 .suggested-products-slider-wrapper__title {
@@ -261,7 +266,9 @@
 }
 
 .cart-body__suggested-products-slider {
-    width: 100%
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    padding: 0px 20px;
 }
 
 .suggested-products-slider__suggested-product {
@@ -313,6 +320,13 @@
     border-radius: 50px;
     margin-top: auto;
     height: 28px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.suggested-info__button:hover {
+    background: var(--color-black);
+    color: var(--color-white);
 }
 
 .suggested-product__product-image {
@@ -329,10 +343,12 @@
 
 .cart-drawer__cart-footer {
     padding-top: 16px;
+    margin-top: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    border-top: 1px solid var(--color-gray);
 }
 
 .cart-footer__cost {
@@ -362,9 +378,10 @@
     text-align: right;
     color: var(--color-black);
     margin-bottom: 20px;
+    margin-left: auto;
 }
 
-.cart-drawer__cart-footer button {
+.cart-drawer__cart-footer>button {
     height: 50px;
     width: 100%;
     display: flex;
@@ -372,11 +389,19 @@
     justify-content: center;
 }
 
+.cart-drawer__suggested-products-slider-wrapper .swiper-pagination {
+    padding-top: 20px;
+}
+
 @media screen and (max-width:768px) {
     .cart-drawer__cart-footer button {
         font-size: 12px;
         line-height: 14.22px;
         height: 38px;
+    }
+
+    .cart-drawer__wrapper {
+        padding: 30px 15px 15px 15px;
     }
 }
 

@@ -813,6 +813,11 @@
         line-height: 15px;
     }
 
+    .breadcrumbs {
+        padding-top: 15px;
+        padding-bottom: 0px;
+    }
+
     .collection__title {
         margin-bottom: 30px;
     }

@@ -110,7 +110,7 @@
     gap: 4px;
 }
 
-.product-info__description {
+.main-info__description {
     font-family: Rubik;
     font-size: 16px;
     font-weight: 500;
@@ -160,7 +160,7 @@
     stroke: var(--color-white);
 }
 
-.menu-to-buy__variants {
+.quick-view-modal__hero-product .menu-to-buy__variants {
     margin-bottom: 30px;
     padding-left: 65px;
 }
@@ -496,7 +496,7 @@
         margin-top: 15px;
     }
 
-    .product-info__description {
+    .main-info__description {
         margin: 15px;
         font-size: 14px;
         line-height: 21px;

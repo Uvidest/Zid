@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				".cart-body__suggested-products-slider .swiper-slide",
 			).length,
 			pagination: {
-				el: ".cart-body__suggested-products-slider-wrapper .swiper-pagination",
+				el: ".cart-drawer__suggested-products-slider-wrapper .swiper-pagination",
 			},
 		},
 	);
