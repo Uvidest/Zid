@@ -314,8 +314,8 @@
     user-select: none;
 }
 
-.count-picker__minus[disable="true"],
-.count-picker__plus[disable="true"] {
+.count-picker__minus[data-disable="true"],
+.count-picker__plus[data-disable="true"] {
     opacity: .5;
 }
 
