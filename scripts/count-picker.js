@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			if (countPicker.value > 999) {
 				countPicker.value = 999;
 			}
-			minus.setAttribute('disable', countPicker.value <= 1);
-			plus.setAttribute('disable', countPicker.value >= 999);
+			minus.setAttribute('data-disable', countPicker.value <= 1);
+			plus.setAttribute('data-disable', countPicker.value >= 999);
 
 		}
 
