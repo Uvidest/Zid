@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		).length,
 		pagination: {
 			el: ".quick-view-modal__slider-wrapper .swiper-pagination",
+			clickable: true
 		},
 	});
 });

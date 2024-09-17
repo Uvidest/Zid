@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			).length,
 			pagination: {
 				el: ".cart-drawer__suggested-products-slider-wrapper .swiper-pagination",
+				clickable: true
 			},
 		},
 	);
