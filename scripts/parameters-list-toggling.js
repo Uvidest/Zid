@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	const parameterWrappers = document.querySelectorAll(".list__parameter-wrapper");
 	parameterWrappers.forEach((parameterWrapper) => {
-		const parameter = parameterWrapper.querySelector(".list__parameter--mobile");
+		const parameter = parameterWrapper.querySelector(".list__parameter");
 		const parameterDescriptionWrapper = parameterWrapper.querySelector(
 			".list__parameter-description-wrapper",
 		);

@@ -1,7 +1,8 @@
 .announcement-bar {
     background: var(--color-black);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 40px;
 }
 
 .announcement-bar__wrapper {
@@ -9,6 +10,15 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.announcement-bar__wrapper.announcement-bar--without-timer {
+    gap: 8px;
+}
+
+.announcement-bar__icon {
+    width: 24px;
+    height: 24px;
 }
 
 .announcement-bar__buy-button {
@@ -79,7 +89,7 @@
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 50;
+    z-index: 100;
 }
 
 .header__wrapper {
@@ -89,6 +99,7 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    height: 99px;
 }
 
 .header__icons-nav {
@@ -175,6 +186,7 @@
     justify-content: center;
     border: none;
     outline: none;
+    cursor: pointer;
     border-radius: 100%;
     background: var(--color-gray);
 }
@@ -306,6 +318,12 @@
 
     .announcement-bar__timer {
         gap: 5px;
+    }
+
+    .header__wrapper {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: 71px;
     }
 
     .header__logo img {

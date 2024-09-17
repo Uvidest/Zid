@@ -9,10 +9,7 @@ const thubmsSlider = new Swiper(".product-slider__thumbs-slider", {
 });
 const mainSlider = new Swiper(".hero-product__product-slider", {
 	spaceBetween: 15,
-	slidesPerView: 1.1,
-	initialSlide: document.querySelectorAll(
-		".hero-product__product-slider .swiper-slide",
-	).length,
+	slidesPerView: 'auto',
 	thumbs: {
 		swiper: thubmsSlider,
 	},

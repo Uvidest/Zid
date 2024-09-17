@@ -4,14 +4,22 @@ document.addEventListener("DOMContentLoaded", () => {
 	const cartDrawerBackground = cartDrawer.querySelector(
 		".cart-drawer__background",
 	);
+
 	const addToCartButtons = document.querySelectorAll(".add-to-cart");
 
-	function closeModal() {
-		cartDrawer?.classList.remove("cart--opened");
-	}
+	let scrollTop = 0;
 
 	function openModal() {
 		cartDrawer?.classList.add("cart--opened");
+		scrollTop = window.scrollY;
+		if (typeof toggleScroll == 'function')
+			toggleScroll(true, scrollTop)
+	}
+
+	function closeModal() {
+		cartDrawer?.classList.remove("cart--opened");
+		if (typeof toggleScroll == 'function')
+			toggleScroll(false, scrollTop);
 	}
 
 	addToCartButtons?.forEach((button) => {
