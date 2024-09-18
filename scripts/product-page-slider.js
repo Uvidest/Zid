@@ -15,6 +15,7 @@ const mainSlider = new Swiper(".hero-product__product-slider", {
 	},
 	pagination: {
 		el: ".hero-product__slider-wrapper .swiper-pagination",
+		clickable: true
 	},
 	breakpoints: {
 		768: {

@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		).length,
 		pagination: {
 			el: ".collections-grid__slider .swiper-pagination",
+			clickable: true
 		},
 		navigation: {
 			nextEl: ".collections-grid__navigation-wrapper .swiper-button-next",

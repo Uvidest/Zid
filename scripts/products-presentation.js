@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		).length,
 		pagination: {
 			el: ".presentation-body__slider .swiper-pagination",
+			clickable: true
 		},
 	});
 

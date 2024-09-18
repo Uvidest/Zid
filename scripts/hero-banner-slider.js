@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		).length,
 		pagination: {
 			el: ".hero-banner__slider .swiper-pagination",
+			clickable: true
 		},
 		navigation: {
 			nextEl: ".hero-banner__navigation-wrapper .swiper-button-next",
