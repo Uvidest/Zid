@@ -119,7 +119,7 @@
     margin-top: 30px;
 }
 
-.menu-to-buy__like-button {
+.variants__like-button {
     transition: all .3s ease;
     width: 45px;
     height: 45px;
@@ -133,45 +133,46 @@
     cursor: pointer;
 }
 
-.menu-to-buy__like-button:active {
+.variants__like-button:active {
     background: var(--color-white) !important;
 }
 
-.menu-to-buy__like-button:active svg {
+.variants__like-button:active svg {
     fill: var(--color-black) !important;
     stroke: var(--color-black) !important;
 }
 
-.menu-to-buy__like-button:active path {
+.variants__like-button:active path {
     stroke: var(--color-black) !important;
     fill: var(--color-black) !important;
 }
 
 
-.menu-to-buy__like-button path {
+.variants__like-button path {
     transition: all .3s ease;
 }
 
-.menu-to-buy__like-button:hover {
+.variants__like-button:hover {
     background: var(--color-black);
 }
 
-.menu-to-buy__like-button:hover path {
+.variants__like-button:hover path {
     stroke: var(--color-white);
 }
 
 .quick-view-modal__hero-product .menu-to-buy__variants {
     margin-bottom: 30px;
-    padding-left: 65px;
 }
 
 .variants__color-swatches {
-    padding-top: 20px;
+    padding-left: 65px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row-reverse;
     gap: 15px;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .variants__color-swatches input[type="checkbox"] {
@@ -266,8 +267,7 @@
     position: relative;
 }
 
-.menu-to-buy__like-button {
-    top: 45px;
+.variants__like-button {
     left: 0;
     position: absolute;
 }
@@ -402,6 +402,7 @@
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
+    color: var(--color-black);
     text-align: right;
     display: flex;
     gap: 10px;
@@ -437,8 +438,6 @@
         position: absolute;
         width: 100%;
         bottom: 0;
-        max-height: calc(100vh - 80px);
-        min-height: calc(100vh - 80px);
         overflow-y: scroll;
         padding: 54px 15px 20px 15px;
         border-bottom-left-radius: 0;
@@ -473,7 +472,7 @@
         border-radius: 10px;
     }
 
-    .quick-view-modal .menu-to-buy__like-button {
+    .quick-view-modal .variants__like-button {
         display: none;
     }
 
@@ -502,7 +501,7 @@
         line-height: 21px;
     }
 
-    .menu-to-buy__like-button {
+    .variants__like-button {
         display: none;
     }
 
