@@ -539,6 +539,17 @@
     opacity: .2;
     border-radius: 0;
     transition: all .5s ease;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.swiper-pagination .swiper-pagination-bullet::before {
+    content: '';
+    height: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
