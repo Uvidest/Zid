@@ -1315,6 +1315,11 @@
         order: 2;
     }
 
+    .hero-grid__product.product--large .product-info__rating img {
+        width: 14px;
+        height: 14px;
+    }
+
     .hero-grid__product .product-info__name {
         font-size: 13px;
         line-height: 19.5px;
