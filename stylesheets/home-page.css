@@ -721,7 +721,7 @@
     content: '';
     background-image: url('../assets/images/after.png');
     position: absolute;
-    width: calc(100vw - 50px * 2);
+    width: calc(100dvw - 50px * 2);
     height: 100%;
     background-size: cover;
 }
@@ -1203,7 +1203,7 @@
     }
 
     .before-after__before::before {
-        width: calc(100vw - 15px * 2);
+        width: calc(100dvw - 15px * 2);
     }
 
     .before-after__button {

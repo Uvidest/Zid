@@ -7,13 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	if (facetsForm) {
 		facetsButton?.addEventListener("click", () => {
-			facetsForm.classList.add("facets--opened");
+			facetsForm.classList.add("modal--opened");
 			scrollTop = window.scrollY;
-			toggleScroll(true, scrollTop);
+			toggleScroll(scrollTop);
 		});
 		facetsCross?.addEventListener("click", () => {
-			facetsForm.classList.remove("facets--opened");
-			toggleScroll(false, scrollTop);
+			facetsForm.classList.remove("modal--opened");
+			toggleScroll(scrollTop);
 		});
 	}
 });

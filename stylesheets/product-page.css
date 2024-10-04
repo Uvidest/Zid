@@ -760,6 +760,11 @@
         border-radius: 0;
     }
 
+    .menu-to-buy__like-button {
+        width: 30px;
+        height: 30px;
+    }
+
     .product-slider__slide {
         width: 320px;
         height: 400px;
@@ -795,10 +800,6 @@
     .product-info__description {
         font-size: 14px;
         line-height: 21px;
-    }
-
-    .menu-to-buy__like-button {
-        display: none;
     }
 
     .menu-to-buy__variants {
@@ -953,5 +954,14 @@
     .product-icons__add-to-cart-button {
         opacity: 1;
         visibility: visible;
+    }
+
+    .menu-to-buy__like-button {
+        top: 53px;
+    }
+
+    .menu-to-buy__like-button svg {
+        width: 14px;
+        height: 12px;
     }
 }

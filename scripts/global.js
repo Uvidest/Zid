@@ -1,5 +1,5 @@
-function toggleScroll(isScrollDisabled, scrollTop) {
-    document.body.classList.toggle('remove-scrolling', isScrollDisabled);
+function toggleScroll(scrollTop) {
+    document.body.classList.toggle('remove-scrolling', document.querySelector('.modal--opened') !== null);
     if (isScrollDisabled) {
         document.body.style.top = `-${scrollTop}px`;
     }
