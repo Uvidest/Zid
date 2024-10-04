@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
 		facetsButton?.addEventListener("click", () => {
 			facetsForm.classList.add("modal--opened");
 			scrollTop = window.scrollY;
-			toggleScroll(true, scrollTop);
+			toggleScroll(scrollTop);
 		});
 		facetsCross?.addEventListener("click", () => {
 			facetsForm.classList.remove("modal--opened");
-			toggleScroll(false, scrollTop);
+			toggleScroll(scrollTop);
 		});
 	}
 });

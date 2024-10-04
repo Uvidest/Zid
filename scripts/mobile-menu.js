@@ -14,14 +14,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		mobileMenu.classList.add("modal--opened");
 		scrollTop = window.scrollY;
 		if (typeof toggleScroll == 'function')
-			toggleScroll(true, scrollTop)
+			toggleScroll(scrollTop)
 	});
 
 	[mobileMenuCloseButton, mobileMenuBackground].forEach(element => {
 		element.addEventListener('click', () => {
 			mobileMenu.classList.remove("modal--opened");
 			if (typeof toggleScroll == 'function')
-				toggleScroll(false, scrollTop);
+				toggleScroll(scrollTop);
 		});
 	})
 });
