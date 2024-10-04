@@ -196,14 +196,14 @@
     top: 0;
     right: 0;
     z-index: 100;
-    height: 100vh;
-    width: 100vw;
+    height: 100dvh;
+    width: 100dvw;
     display: flex;
     justify-content: end;
     transition: all .5s ease;
 }
 
-.header__mobile-menu:not(.menu--opened) {
+.header__mobile-menu:not(.modal--opened) {
     opacity: 0;
     visibility: hidden;
 }
@@ -223,7 +223,7 @@
     z-index: 10;
 }
 
-.header__mobile-menu:not(.menu--opened) .mobile-menu__wrapper {
+.header__mobile-menu:not(.modal--opened) .mobile-menu__wrapper {
     transform: translateX(100%);
 }
 

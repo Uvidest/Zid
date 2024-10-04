@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	let scrollTop = 0
 
 	mobileMenuButton?.addEventListener("click", () => {
-		mobileMenu.classList.add("menu--opened");
+		mobileMenu.classList.add("modal--opened");
 		scrollTop = window.scrollY;
 		if (typeof toggleScroll == 'function')
 			toggleScroll(true, scrollTop)
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	[mobileMenuCloseButton, mobileMenuBackground].forEach(element => {
 		element.addEventListener('click', () => {
-			mobileMenu.classList.remove("menu--opened");
+			mobileMenu.classList.remove("modal--opened");
 			if (typeof toggleScroll == 'function')
 				toggleScroll(false, scrollTop);
 		});

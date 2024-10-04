@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	function closeModal() {
 		modalWrapper?.classList.remove("modal--opened");
-		toggleScroll(false, scrollTop);
+		toggleScroll(scrollTop);
 	}
 
 	function openModal() {
 		modalWrapper?.classList.add("modal--opened");
 		scrollTop = window.scrollY;
-		toggleScroll(true, scrollTop);
+		toggleScroll(scrollTop);
 	}
 
 	openModalButtons?.forEach((button) => {
